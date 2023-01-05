@@ -1,0 +1,259 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_user" xml:lang="en-US">
+<title>User Class Reference</title>
+<indexterm><primary>User</primary></indexterm>
+<para>
+
+<para>In this class, there are all features and relations between Admins, Students and Professors. </para>
+ 
+</para>
+<para>
+<computeroutput>#include &lt;user.h&gt;</computeroutput>
+</para>
+<para>Inheritance diagram for User:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_user.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_user_1ae4fb7fdfda804e2c1e8ead2780a77f3c">User</link> (std::string name, std::string email, std::string phone, std::string department, int age)</para>
+
+<para><link linkend="_class_user">User</link> Class Features. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_user_1a90d4d69ce714062ed416e498ed687614"/><emphasis role="strong">User</emphasis> (std::string name, std::string email, std::string phone, int age)</para>
+</listitem>
+            <listitem><para>std::string <link linkend="_class_user_1a446a64e63adafbc2e1428532275ad6a1">getName</link> () const</para>
+
+<para>Get the <link linkend="_class_user">User</link>&apos;s Name. </para>
+</listitem>
+            <listitem><para>std::string <link linkend="_class_user_1a68c520e78268ba63c97ff04b6fb210a1">getEmail</link> () const</para>
+
+<para>Get the <link linkend="_class_user">User</link>&apos;s Email. </para>
+</listitem>
+            <listitem><para>std::string <link linkend="_class_user_1aa6b3271fff710eee0b406cc270fe7071">getPhone</link> () const</para>
+
+<para>Get the <link linkend="_class_user">User</link>&apos;s Phone. </para>
+</listitem>
+            <listitem><para>std::string <link linkend="_class_user_1a2da830cf1d7f4f70fb1cdb1cf179a464">getDepartment</link> () const</para>
+
+<para>Get the <link linkend="_class_user">User</link>&apos;s Department. </para>
+</listitem>
+            <listitem><para>int <link linkend="_class_user_1a71385d4c5a3a509af5024b3c8e1e1aa9">getAge</link> () const</para>
+
+<para>Get the <link linkend="_class_user">User</link>&apos;s Age. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>In this class, there are all features and relations between Admins, Students and Professors. </para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_user_1ae4fb7fdfda804e2c1e8ead2780a77f3c"/><section>
+    <title>User()</title>
+<indexterm><primary>User</primary><secondary>User</secondary></indexterm>
+<indexterm><primary>User</primary><secondary>User</secondary></indexterm>
+<para><computeroutput>User::User (std::string name, std::string email, std::string phone, std::string department, int age)</computeroutput></para><para>
+
+<para><link linkend="_class_user">User</link> Class Features. </para>
+</para>
+
+<para>This class is used to link the data of Users to the database. <formalpara><title>Author</title>
+
+<para>Amir Hesham </para>
+</formalpara>
+<formalpara><title>Copyright</title>
+
+<para>Brogrammers. </para>
+</formalpara>
+</para>
+</section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_user_1a71385d4c5a3a509af5024b3c8e1e1aa9"/><section>
+    <title>getAge()</title>
+<indexterm><primary>getAge</primary><secondary>User</secondary></indexterm>
+<indexterm><primary>User</primary><secondary>getAge</secondary></indexterm>
+<para><computeroutput>int User::getAge ( ) const</computeroutput></para><para>
+
+<para>Get the <link linkend="_class_user">User</link>&apos;s Age. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>NULL</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para><link linkend="_class_user">User</link>&apos;s Age </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_class_user_1a2da830cf1d7f4f70fb1cdb1cf179a464"/><section>
+    <title>getDepartment()</title>
+<indexterm><primary>getDepartment</primary><secondary>User</secondary></indexterm>
+<indexterm><primary>User</primary><secondary>getDepartment</secondary></indexterm>
+<para><computeroutput>std::string User::getDepartment ( ) const</computeroutput></para><para>
+
+<para>Get the <link linkend="_class_user">User</link>&apos;s Department. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>NULL</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para><link linkend="_class_user">User</link>&apos;s Department </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_class_user_1a68c520e78268ba63c97ff04b6fb210a1"/><section>
+    <title>getEmail()</title>
+<indexterm><primary>getEmail</primary><secondary>User</secondary></indexterm>
+<indexterm><primary>User</primary><secondary>getEmail</secondary></indexterm>
+<para><computeroutput>std::string User::getEmail ( ) const</computeroutput></para><para>
+
+<para>Get the <link linkend="_class_user">User</link>&apos;s Email. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>NULL</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para><link linkend="_class_user">User</link>&apos;s Email </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_class_user_1a446a64e63adafbc2e1428532275ad6a1"/><section>
+    <title>getName()</title>
+<indexterm><primary>getName</primary><secondary>User</secondary></indexterm>
+<indexterm><primary>User</primary><secondary>getName</secondary></indexterm>
+<para><computeroutput>std::string User::getName ( ) const</computeroutput></para><para>
+
+<para>Get the <link linkend="_class_user">User</link>&apos;s Name. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>NULL</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para><link linkend="_class_user">User</link>&apos;s Name </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_class_user_1aa6b3271fff710eee0b406cc270fe7071"/><section>
+    <title>getPhone()</title>
+<indexterm><primary>getPhone</primary><secondary>User</secondary></indexterm>
+<indexterm><primary>User</primary><secondary>getPhone</secondary></indexterm>
+<para><computeroutput>std::string User::getPhone ( ) const</computeroutput></para><para>
+
+<para>Get the <link linkend="_class_user">User</link>&apos;s Phone. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>NULL</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para><link linkend="_class_user">User</link>&apos;s Phone </para>
+</formalpara>
+</para>
+</section>
+<para>
+The documentation for this class was generated from the following files:</para>
+F:/CUFE/SBME 2022/First Term/Data Structure/Final Project/Mo3id REPO/final-project-brogrammers/models/user.hF:/CUFE/SBME 2022/First Term/Data Structure/Final Project/Mo3id REPO/final-project-brogrammers/models/user.cpp</section>
+</section>

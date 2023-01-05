@@ -1,0 +1,419 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_professor" xml:lang="en-US">
+<title>Professor Class Reference</title>
+<indexterm><primary>Professor</primary></indexterm>
+<para>
+
+<para>In this class, there are all features and relations between Professors and courses. </para>
+ 
+</para>
+<para>
+<computeroutput>#include &lt;professor.h&gt;</computeroutput>
+</para>
+<para>Inheritance diagram for Professor:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_professor.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_class_professor_1ae62d602a0943684cb99f69e8ff418f75"/><emphasis role="strong">Professor</emphasis> (std::string name, std::string email, std::string phone, std::string department, std::string phd, std::string honors, std::string additional, std::string graduated_from, int age, std::string birth, std::string joined_on)</para>
+</listitem>
+            <listitem><para>int <link linkend="_class_professor_1a57658b4b45c76c490d3077975437f2db">get_id</link> ()</para>
+
+<para>Get the <link linkend="_class_professor">Professor</link>&apos;s ID. </para>
+</listitem>
+            <listitem><para>std::string <link linkend="_class_professor_1a9a33b27fb6082ed5a36631fc85152b57">get_phd</link> ()</para>
+
+<para>Get the <link linkend="_class_professor">Professor</link>&apos;s PHD Name. </para>
+</listitem>
+            <listitem><para>std::string <link linkend="_class_professor_1ab151f56fe1d6c58bbd1386a806d374e5">get_honors</link> ()</para>
+
+<para>Get the <link linkend="_class_professor">Professor</link>&apos;s Honors. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_professor_1abff1b377bf8fcfdab848e40cc6026b99"/>std::string <emphasis role="strong">get_additional</emphasis> ()</para>
+</listitem>
+            <listitem><para>std::string <link linkend="_class_professor_1a61def81c25db5836d6f5a4e218bd4047">get_graduated_from</link> ()</para>
+
+<para>Get the <link linkend="_class_professor">Professor</link>&apos;s Graduation University. </para>
+</listitem>
+            <listitem><para>std::string <link linkend="_class_professor_1a3e578e6bec6536de6c045c0e71fbd8b1">get_joined_on</link> ()</para>
+
+<para>Get the <link linkend="_class_professor">Professor</link>&apos;s Joining Date. </para>
+</listitem>
+            <listitem><para>std::string <link linkend="_class_professor_1a04802dfdd75b16ef91f779092602e9b8">get_birth</link> ()</para>
+
+<para>Get the <link linkend="_class_professor">Professor</link>&apos;s Date of Birth. </para>
+</listitem>
+            <listitem><para>std::vector&lt; std::string &gt; <link linkend="_class_professor_1a8197260e8a689fb6e958293a9e64a75f">get_courses</link> ()</para>
+
+<para>Get the <link linkend="_class_professor">Professor</link>&apos;s courses. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_professor_1a081da51951df7e949e16ea9f1a4484ae">set_courses</link> (std::string course)</para>
+
+<para>Organize the <link linkend="_class_professor">Professor</link>&apos;s Courses. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_professor_1a379e0e5738e4f4aff57bf33c17e276f4">unenroll</link> (std::string)</para>
+
+<para>Remove the course from the <link linkend="_class_professor">Professor</link> profile. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Public Member Functions inherited from <link linkend="_class_user">User</link>        <itemizedlist>
+            <listitem><para><link linkend="_class_user_1ae4fb7fdfda804e2c1e8ead2780a77f3c">User</link> (std::string name, std::string email, std::string phone, std::string department, int age)</para>
+
+<para><link linkend="_class_user">User</link> Class Features. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_user_1a90d4d69ce714062ed416e498ed687614"/><emphasis role="strong">User</emphasis> (std::string name, std::string email, std::string phone, int age)</para>
+</listitem>
+            <listitem><para>std::string <link linkend="_class_user_1a446a64e63adafbc2e1428532275ad6a1">getName</link> () const</para>
+
+<para>Get the <link linkend="_class_user">User</link>&apos;s Name. </para>
+</listitem>
+            <listitem><para>std::string <link linkend="_class_user_1a68c520e78268ba63c97ff04b6fb210a1">getEmail</link> () const</para>
+
+<para>Get the <link linkend="_class_user">User</link>&apos;s Email. </para>
+</listitem>
+            <listitem><para>std::string <link linkend="_class_user_1aa6b3271fff710eee0b406cc270fe7071">getPhone</link> () const</para>
+
+<para>Get the <link linkend="_class_user">User</link>&apos;s Phone. </para>
+</listitem>
+            <listitem><para>std::string <link linkend="_class_user_1a2da830cf1d7f4f70fb1cdb1cf179a464">getDepartment</link> () const</para>
+
+<para>Get the <link linkend="_class_user">User</link>&apos;s Department. </para>
+</listitem>
+            <listitem><para>int <link linkend="_class_user_1a71385d4c5a3a509af5024b3c8e1e1aa9">getAge</link> () const</para>
+
+<para>Get the <link linkend="_class_user">User</link>&apos;s Age. </para>
+</listitem>
+        </itemizedlist>
+<section>
+<title>Detailed Description</title>
+
+<para>In this class, there are all features and relations between Professors and courses. </para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_professor_1a04802dfdd75b16ef91f779092602e9b8"/><section>
+    <title>get_birth()</title>
+<indexterm><primary>get_birth</primary><secondary>Professor</secondary></indexterm>
+<indexterm><primary>Professor</primary><secondary>get_birth</secondary></indexterm>
+<para><computeroutput>std::string Professor::get_birth ( )</computeroutput></para><para>
+
+<para>Get the <link linkend="_class_professor">Professor</link>&apos;s Date of Birth. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>NULL</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para><link linkend="_class_professor">Professor</link>&apos;s Date of Birth </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_class_professor_1a8197260e8a689fb6e958293a9e64a75f"/><section>
+    <title>get_courses()</title>
+<indexterm><primary>get_courses</primary><secondary>Professor</secondary></indexterm>
+<indexterm><primary>Professor</primary><secondary>get_courses</secondary></indexterm>
+<para><computeroutput>std::vector&lt; std::string &gt; Professor::get_courses ( )</computeroutput></para><para>
+
+<para>Get the <link linkend="_class_professor">Professor</link>&apos;s courses. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>NULL</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para><link linkend="_class_professor">Professor</link>&apos;s courses </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_class_professor_1a61def81c25db5836d6f5a4e218bd4047"/><section>
+    <title>get_graduated_from()</title>
+<indexterm><primary>get_graduated_from</primary><secondary>Professor</secondary></indexterm>
+<indexterm><primary>Professor</primary><secondary>get_graduated_from</secondary></indexterm>
+<para><computeroutput>std::string Professor::get_graduated_from ( )</computeroutput></para><para>
+
+<para>Get the <link linkend="_class_professor">Professor</link>&apos;s Graduation University. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>NULL</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para><link linkend="_class_professor">Professor</link>&apos;s Graduation University </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_class_professor_1ab151f56fe1d6c58bbd1386a806d374e5"/><section>
+    <title>get_honors()</title>
+<indexterm><primary>get_honors</primary><secondary>Professor</secondary></indexterm>
+<indexterm><primary>Professor</primary><secondary>get_honors</secondary></indexterm>
+<para><computeroutput>std::string Professor::get_honors ( )</computeroutput></para><para>
+
+<para>Get the <link linkend="_class_professor">Professor</link>&apos;s Honors. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>NULL</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para><link linkend="_class_professor">Professor</link>&apos;s Honors </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_class_professor_1a57658b4b45c76c490d3077975437f2db"/><section>
+    <title>get_id()</title>
+<indexterm><primary>get_id</primary><secondary>Professor</secondary></indexterm>
+<indexterm><primary>Professor</primary><secondary>get_id</secondary></indexterm>
+<para><computeroutput>int Professor::get_id ( )</computeroutput></para><para>
+
+<para>Get the <link linkend="_class_professor">Professor</link>&apos;s ID. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>NULL</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para><link linkend="_class_professor">Professor</link>&apos;s ID </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_class_professor_1a3e578e6bec6536de6c045c0e71fbd8b1"/><section>
+    <title>get_joined_on()</title>
+<indexterm><primary>get_joined_on</primary><secondary>Professor</secondary></indexterm>
+<indexterm><primary>Professor</primary><secondary>get_joined_on</secondary></indexterm>
+<para><computeroutput>std::string Professor::get_joined_on ( )</computeroutput></para><para>
+
+<para>Get the <link linkend="_class_professor">Professor</link>&apos;s Joining Date. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>NULL</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para><link linkend="_class_professor">Professor</link>&apos;s Joining Date </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_class_professor_1a9a33b27fb6082ed5a36631fc85152b57"/><section>
+    <title>get_phd()</title>
+<indexterm><primary>get_phd</primary><secondary>Professor</secondary></indexterm>
+<indexterm><primary>Professor</primary><secondary>get_phd</secondary></indexterm>
+<para><computeroutput>std::string Professor::get_phd ( )</computeroutput></para><para>
+
+<para>Get the <link linkend="_class_professor">Professor</link>&apos;s PHD Name. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>NULL</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para><link linkend="_class_professor">Professor</link>&apos;s PHD Name </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_class_professor_1a081da51951df7e949e16ea9f1a4484ae"/><section>
+    <title>set_courses()</title>
+<indexterm><primary>set_courses</primary><secondary>Professor</secondary></indexterm>
+<indexterm><primary>Professor</primary><secondary>set_courses</secondary></indexterm>
+<para><computeroutput>void Professor::set_courses (std::string course)</computeroutput></para><para>
+
+<para>Organize the <link linkend="_class_professor">Professor</link>&apos;s Courses. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry><link linkend="_class_course">Course</link></entry><entry>
+<para>To add Courses that each professor is the lecturer of it </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>Nothing to be returned </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_class_professor_1a379e0e5738e4f4aff57bf33c17e276f4"/><section>
+    <title>unenroll()</title>
+<indexterm><primary>unenroll</primary><secondary>Professor</secondary></indexterm>
+<indexterm><primary>Professor</primary><secondary>unenroll</secondary></indexterm>
+<para><computeroutput>void Professor::unenroll (std::string course)</computeroutput></para><para>
+
+<para>Remove the course from the <link linkend="_class_professor">Professor</link> profile. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>Course_Name</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>Nothing to be returned </para>
+</formalpara>
+</para>
+</section>
+<para>
+The documentation for this class was generated from the following files:</para>
+F:/CUFE/SBME 2022/First Term/Data Structure/Final Project/Mo3id REPO/final-project-brogrammers/models/professor.hF:/CUFE/SBME 2022/First Term/Data Structure/Final Project/Mo3id REPO/final-project-brogrammers/models/professor.cpp</section>
+</section>

@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dialog_8h_source" xml:lang="en-US">
+<title>dialog.h</title>
+<indexterm><primary>F:/CUFE/SBME 2022/First Term/Data Structure/Final Project/Mo3id REPO/final-project-brogrammers/controllers/dialog.h</primary></indexterm>
+<programlisting linenumbering="unnumbered">1 <emphasis role="preprocessor">#ifndef&#32;DIALOG_H</emphasis>
+2 <emphasis role="preprocessor">#define&#32;DIALOG_H</emphasis>
+3 
+4 <emphasis role="preprocessor">#include&#32;&lt;QDialog&gt;</emphasis>
+5 
+6 
+7 
+8 
+9 <emphasis role="keyword">namespace&#32;</emphasis>Ui&#32;{
+10 <emphasis role="keyword">class&#32;</emphasis><link linkend="_class_dialog">Dialog</link>;
+11 }
+12 
+13 
+19 <emphasis role="keyword">class&#32;</emphasis><link linkend="_class_dialog">Dialog</link>&#32;:&#32;<emphasis role="keyword">public</emphasis>&#32;QDialog
+20 {
+21 &#32;&#32;&#32;&#32;Q_OBJECT
+22 
+23 <emphasis role="keyword">public</emphasis>:
+24 &#32;&#32;&#32;&#32;<emphasis role="keyword">explicit</emphasis>&#32;<link linkend="_class_dialog">Dialog</link>(QWidget&#32;*parent&#32;=&#32;<emphasis role="keyword">nullptr</emphasis>,&#32;QString&#32;message&#32;=&#32;<emphasis role="stringliteral">&quot;Failed&quot;</emphasis>);
+25 &#32;&#32;&#32;&#32;<link linkend="_class_dialog">~Dialog</link>();
+26 
+27 <emphasis role="keyword">private</emphasis>&#32;slots:
+28 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;on_btn_close_clicked();
+29 
+30 <emphasis role="keyword">private</emphasis>:
+31 &#32;&#32;&#32;&#32;Ui::Dialog&#32;*ui;
+32 };
+33 
+34 <emphasis role="preprocessor">#endif&#32;</emphasis><emphasis role="comment">//&#32;DIALOG_H</emphasis>
+</programlisting></section>

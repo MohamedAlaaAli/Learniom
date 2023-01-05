@@ -1,0 +1,49 @@
+\hypertarget{admin_8h_source}{}\doxysection{admin.\+h}
+\label{admin_8h_source}\index{F:/CUFE/SBME 2022/First Term/Data Structure/Final Project/Mo3id REPO/final-\/project-\/brogrammers/models/admin.h@{F:/CUFE/SBME 2022/First Term/Data Structure/Final Project/Mo3id REPO/final-\/project-\/brogrammers/models/admin.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ ADMIN\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ ADMIN\_H}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}QDateTime"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}user.h"{}}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_admin}{Admin}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_user}{User}}\{}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keywordtype}{int}\ ID;}
+\DoxyCodeLine{00018\ \ \ \ \ std::string\ speciality;}
+\DoxyCodeLine{00019\ \ \ \ \ std::string\ title;}
+\DoxyCodeLine{00020\ \ \ \ \ std::string\ password;}
+\DoxyCodeLine{00021\ \ \ \ \ QDateTime\ creation\_date;}
+\DoxyCodeLine{00022\ \ \ \ \ std::string\ biography;}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00026\ \ \ \ \ \mbox{\hyperlink{class_admin}{Admin}}(}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ std::string\ name,}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ std::string\ speciality,}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ std::string\ title,}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ std::string\ email,}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ std::string\ password,}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ std::string\ phone,}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ std::string\ biography,}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ age,}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ QDateTime\ creation\_date);}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_admin_afc5dc3eb945860d289e41f93b71039df}{get\_id}}();}
+\DoxyCodeLine{00038\ \ \ \ \ std::string\ \mbox{\hyperlink{class_admin_ad4aa7e6c4ab3d5da800f05325ec22617}{get\_speciality}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00039\ \ \ \ \ std::string\ \mbox{\hyperlink{class_admin_a95ed96086fd6979dbb88673e7c60be30}{get\_title}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00040\ \ \ \ \ std::string\ \mbox{\hyperlink{class_admin_a3362cbc3fa27cc7b7e578fb1a08eb4d9}{get\_password}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00041\ \ \ \ \ QDateTime\ \mbox{\hyperlink{class_admin_a423d379f0d9e0ee643aa4b67dae2f8b4}{get\_creation\_date}}();}
+\DoxyCodeLine{00042\ \ \ \ \ std::string\ \mbox{\hyperlink{class_admin_a2f854444c15c29cddc5fd1eadbb5f295}{get\_biography}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_admin_a95ebed4324df3585a63c51e84a17e56b}{get\_dateOfbirth}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00046\ \};}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00048\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ ADMIN\_H}}
+
+\end{DoxyCode}

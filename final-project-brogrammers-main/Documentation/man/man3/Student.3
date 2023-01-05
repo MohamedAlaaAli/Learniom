@@ -1,0 +1,241 @@
+.TH "Student" 3 "Mon Jan 2 2023" "Brogrammers" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Student \- In this class, there are all features and relations between student and courses\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <student\&.h>\fP
+.PP
+Inherits \fBUser\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBStudent\fP (std::string name, std::string email, std::string phone, std::string department, int age, int graduation_year)"
+.br
+.RI "\fBStudent\fP Class Features\&. "
+.ti -1c
+.RI "int \fBget_id\fP ()"
+.br
+.RI "Get the \fBStudent\fP's ID\&. "
+.ti -1c
+.RI "int \fBgetGraduation_year\fP () const"
+.br
+.RI "Get the \fBStudent\fP's Graduation Year\&. "
+.ti -1c
+.RI "std::vector< std::string > \fBget_courses\fP ()"
+.br
+.RI "Get the \fBStudent\fP's Courses\&. "
+.ti -1c
+.RI "void \fBset_courses\fP (std::string course)"
+.br
+.RI "Add a new \fBCourse\fP to the student profile\&. "
+.ti -1c
+.RI "std::map< std::string, float > \fBget_courses_grades\fP ()"
+.br
+.RI "Show the student's Grades\&. "
+.ti -1c
+.RI "void \fBset_courses_grades\fP (std::string course, float grade)"
+.br
+.RI "Organizing the courses with its crospoinding grade\&. "
+.ti -1c
+.RI "void \fBunenroll\fP (std::string)"
+.br
+.RI "Remove the course from the student profile\&. "
+.ti -1c
+.RI "void \fBenroll\fP (std::string)"
+.br
+.RI "Adding the course to the student profile\&. "
+.in -1c
+
+Public Member Functions inherited from \fBUser\fP
+.in +1c
+.ti -1c
+.RI "\fBUser\fP (std::string name, std::string email, std::string phone, std::string department, int age)"
+.br
+.RI "\fBUser\fP Class Features\&. "
+.ti -1c
+.RI "\fBUser\fP (std::string name, std::string email, std::string phone, int age)"
+.br
+.ti -1c
+.RI "std::string \fBgetName\fP () const"
+.br
+.RI "Get the \fBUser\fP's Name\&. "
+.ti -1c
+.RI "std::string \fBgetEmail\fP () const"
+.br
+.RI "Get the \fBUser\fP's Email\&. "
+.ti -1c
+.RI "std::string \fBgetPhone\fP () const"
+.br
+.RI "Get the \fBUser\fP's Phone\&. "
+.ti -1c
+.RI "std::string \fBgetDepartment\fP () const"
+.br
+.RI "Get the \fBUser\fP's Department\&. "
+.ti -1c
+.RI "int \fBgetAge\fP () const"
+.br
+.RI "Get the \fBUser\fP's Age\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+In this class, there are all features and relations between student and courses\&. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Student::Student (std::string name, std::string email, std::string phone, std::string department, int age, int graduation_year)"
+
+.PP
+\fBStudent\fP Class Features\&. This class is used to link the data of Students to the database\&. 
+.PP
+\fBAuthor\fP
+.RS 4
+Amir Hesham & Mohammed Alaa 
+.RE
+.PP
+\fBCopyright\fP
+.RS 4
+Brogrammers\&. 
+.RE
+.PP
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void Student::enroll (std::string courseName)"
+
+.PP
+Adding the course to the student profile\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fICourse_Name\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Nothing to be returned 
+.RE
+.PP
+
+.SS "std::vector< std::string > Student::get_courses ()"
+
+.PP
+Get the \fBStudent\fP's Courses\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fINULL\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+\fBStudent\fP's Courses (the courses which the student enrolled in) 
+.RE
+.PP
+
+.SS "std::map< std::string, float > Student::get_courses_grades ()"
+
+.PP
+Show the student's Grades\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fINULL\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+All the student's grades 
+.RE
+.PP
+
+.SS "int Student::get_id ()"
+
+.PP
+Get the \fBStudent\fP's ID\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fINULL\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+\fBStudent\fP's ID 
+.RE
+.PP
+
+.SS "int Student::getGraduation_year () const"
+
+.PP
+Get the \fBStudent\fP's Graduation Year\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fINULL\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+\fBStudent\fP's Graduation Year 
+.RE
+.PP
+
+.SS "void Student::set_courses (std::string course)"
+
+.PP
+Add a new \fBCourse\fP to the student profile\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIcourse\fP that will be taken by student in this semester 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+\fBStudent\fP's courses Vector 
+.RE
+.PP
+
+.SS "void Student::set_courses_grades (std::string course, float grade)"
+
+.PP
+Organizing the courses with its crospoinding grade\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIcourse\fP to be linked with a particular grade 
+.br
+\fIgrade\fP to be added with a particular course 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+\fBStudent\fP's course with its grade of the student 
+.RE
+.PP
+
+.SS "void Student::unenroll (std::string courseName)"
+
+.PP
+Remove the course from the student profile\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fICourse_Name\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Nothing to be returned 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Brogrammers from the source code\&.

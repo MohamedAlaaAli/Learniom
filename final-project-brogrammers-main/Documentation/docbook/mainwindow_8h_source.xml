@@ -1,0 +1,149 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_mainwindow_8h_source" xml:lang="en-US">
+<title>mainwindow.h</title>
+<indexterm><primary>F:/CUFE/SBME 2022/First Term/Data Structure/Final Project/Mo3id REPO/final-project-brogrammers/controllers/mainwindow.h</primary></indexterm>
+<programlisting linenumbering="unnumbered">1 <emphasis role="preprocessor">#ifndef&#32;MAINWINDOW_H</emphasis>
+2 <emphasis role="preprocessor">#define&#32;MAINWINDOW_H</emphasis>
+3 
+4 <emphasis role="preprocessor">#include&#32;&lt;QMainWindow&gt;</emphasis>
+5 <emphasis role="preprocessor">#include&#32;&lt;QTableWidgetItem&gt;</emphasis>
+6 <emphasis role="preprocessor">#include&#32;&quot;dialog.h&quot;</emphasis>
+7 
+8 QT_BEGIN_NAMESPACE
+9 <emphasis role="keyword">namespace&#32;</emphasis>Ui&#32;{&#32;<emphasis role="keyword">class&#32;</emphasis><link linkend="_class_main_window">MainWindow</link>;&#32;}
+10 QT_END_NAMESPACE
+11 
+12 
+13 
+18 <emphasis role="keyword">class&#32;</emphasis><link linkend="_class_main_window">MainWindow</link>&#32;:&#32;<emphasis role="keyword">public</emphasis>&#32;QMainWindow
+19 {
+20 &#32;&#32;&#32;&#32;Q_OBJECT
+21 
+22 <emphasis role="keyword">public</emphasis>:
+23 &#32;&#32;&#32;&#32;<link linkend="_class_main_window">MainWindow</link>(QWidget&#32;*parent&#32;=&#32;<emphasis role="keyword">nullptr</emphasis>);
+24 &#32;&#32;&#32;&#32;<link linkend="_class_main_window">~MainWindow</link>();
+25 
+26 <emphasis role="keyword">private</emphasis>&#32;slots:
+27 
+28 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;on_btn_logout_1_clicked();
+29 
+30 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;on_btn_back_clicked();
+31 
+32 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;on_btn_login_clicked();
+33 
+34 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;on_btn_logout_2_clicked();
+35 
+36 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;on_btn_nav_students_clicked();
+37 
+38 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;on_btn_add_student_clicked();
+39 
+40 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;on_btn_add_student_form_clicked();
+41 
+42 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;on_btn_nav_professors_clicked();
+43 
+44 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;on_btn_add_professor_clicked();
+45 
+46 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;on_tbl_students_cellClicked(<emphasis role="keywordtype">int</emphasis>&#32;row,&#32;<emphasis role="keywordtype">int</emphasis>&#32;column);
+47 
+48 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;on_pushButton_5_clicked();
+49 
+50 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;on_pushButton_4_clicked();
+51 
+52 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;on_btn_nav_admins_clicked();
+53 
+54 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;on_btn_add_admin_clicked();
+55 
+56 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;on_btn_add_admin_form_clicked();
+57 
+58 &#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;on_tbl_admins_cellClicked(<emphasis role="keywordtype">int</emphasis>&#32;row,&#32;<emphasis role="keywordtype">int</emphasis>&#32;column);
+59 
+60 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;on_pushButton_20_clicked();
+61 
+62 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;on_pushButton_21_clicked();
+63 
+64 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;on_btn_visit_profile_clicked();
+65 
+66 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;on_pushButton_delete_prof_clicked();
+67 
+68 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;on_pushButton_prof_save_clicked();
+69 
+70 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;on_add_prof_form_clicked();
+71 
+72 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;on_tbl_professors_cellClicked(<emphasis role="keywordtype">int</emphasis>&#32;row,&#32;<emphasis role="keywordtype">int</emphasis>&#32;column);
+73 
+74 
+75 
+76 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;on_btn_nav_courses_clicked();
+77 
+78 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;on_btn_add_course_clicked();
+79 
+80 
+81 
+82 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;on_pushButton_3_clicked();
+83 
+84 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;on_comboBox_currentIndexChanged(<emphasis role="keywordtype">int</emphasis>&#32;index);
+85 
+86 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;on_comboBox_2_currentIndexChanged(<emphasis role="keywordtype">int</emphasis>&#32;index);
+87 
+88 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;on_pushButton_13_clicked();
+89 
+90 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;on_comboBox_7_currentIndexChanged(<emphasis role="keywordtype">int</emphasis>&#32;index);
+91 
+92 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;on_comboBox_8_currentIndexChanged(<emphasis role="keywordtype">int</emphasis>&#32;index);
+93 
+94 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;on_comboBox_10_currentIndexChanged(<emphasis role="keywordtype">int</emphasis>&#32;index);
+95 
+96 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;on_pushButton_15_clicked();
+97 
+98 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;on_pushButton_19_clicked();
+99 
+100 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;on_pushButton_9_clicked();
+101 
+102 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;on_comboBox_4_currentIndexChanged(<emphasis role="keywordtype">int</emphasis>&#32;index);
+103 
+104 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;on_pushButton_18_clicked();
+105 
+106 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;on_tbl_students_4_itemChanged(QTableWidgetItem&#32;*item);
+107 
+108 
+109 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;on_timeEdit_timeChanged(<emphasis role="keyword">const</emphasis>&#32;QTime&#32;&amp;time);
+110 
+111 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;on_tbl_courses_cellClicked(<emphasis role="keywordtype">int</emphasis>&#32;row,&#32;<emphasis role="keywordtype">int</emphasis>&#32;column);
+112 
+113 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;on_pushButton_25_clicked();
+114 
+115 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;on_btn_stud_view_clicked();
+116 
+117 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;on_btn_prof_view_clicked();
+118 
+119 
+120 
+121 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;on_pushButton_22_clicked();
+122 
+123 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;on_pushButton_24_clicked();
+124 
+125 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;on_pushButton_26_clicked();
+126 
+127 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;on_pushButton_14_clicked();
+128 
+129 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;on_btn_view_sel_student_clicked();
+130 
+131 
+132 
+133 &#32;&#32;&#32;<emphasis role="comment">//void&#32;on_btn_delete_sel_student_clicked();</emphasis>
+134 
+135 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;on_tbl_students_4_cellClicked(<emphasis role="keywordtype">int</emphasis>&#32;row,&#32;<emphasis role="keywordtype">int</emphasis>&#32;column);
+136 
+137 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;on_btn_delete_sel_student_clicked();
+138 
+139 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;on_btn_delete_sel_professor_clicked();
+140 
+141 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;on_tbl_professors_5_cellClicked(<emphasis role="keywordtype">int</emphasis>&#32;row,&#32;<emphasis role="keywordtype">int</emphasis>&#32;column);
+142 
+143 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;on_btn_view_sel_professor_clicked();
+144 
+145 <emphasis role="keyword">private</emphasis>:
+146 &#32;&#32;&#32;&#32;Ui::MainWindow&#32;*ui;
+147 };
+148 <emphasis role="preprocessor">#endif&#32;</emphasis><emphasis role="comment">//&#32;MAINWINDOW_H</emphasis>
+</programlisting></section>

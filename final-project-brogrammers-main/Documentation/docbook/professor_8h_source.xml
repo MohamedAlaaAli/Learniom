@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_professor_8h_source" xml:lang="en-US">
+<title>professor.h</title>
+<indexterm><primary>F:/CUFE/SBME 2022/First Term/Data Structure/Final Project/Mo3id REPO/final-project-brogrammers/models/professor.h</primary></indexterm>
+<programlisting linenumbering="unnumbered">1 <emphasis role="preprocessor">#ifndef&#32;PROFESSOR_H</emphasis>
+2 <emphasis role="preprocessor">#define&#32;PROFESSOR_H</emphasis>
+3 
+4 <emphasis role="preprocessor">#include&#32;&lt;iostream&gt;</emphasis>
+5 <emphasis role="preprocessor">#include&#32;&quot;QDateTime&quot;</emphasis>
+6 <emphasis role="preprocessor">#include&#32;&lt;vector&gt;</emphasis>
+7 <emphasis role="preprocessor">#include&#32;&quot;user.h&quot;</emphasis>
+8 <emphasis role="keyword">class&#32;</emphasis><link linkend="_class_course">Course</link>;
+9 
+10 
+17 <emphasis role="keyword">class&#32;</emphasis><link linkend="_class_professor">Professor</link>:&#32;<emphasis role="keyword">public</emphasis>&#32;<link linkend="_class_user">User</link>
+18 {
+19 <emphasis role="keyword">private</emphasis>:
+20 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;ID;
+21 &#32;&#32;&#32;&#32;std::string&#32;phd;
+22 &#32;&#32;&#32;&#32;std::string&#32;honors;
+23 &#32;&#32;&#32;&#32;std::string&#32;additional;
+24 &#32;&#32;&#32;&#32;std::string&#32;graduated_from;
+25 &#32;&#32;&#32;&#32;std::string&#32;joined_on;
+26 &#32;&#32;&#32;&#32;std::string&#32;birth;
+27 &#32;&#32;&#32;&#32;std::vector&lt;std::string&gt;&#32;courses;
+28 <emphasis role="keyword">public</emphasis>:
+29 
+30 &#32;&#32;&#32;<link linkend="_class_professor">Professor</link>(
+31 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::string&#32;name,
+32 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::string&#32;email,
+33 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::string&#32;phone,
+34 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::string&#32;department,
+35 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::string&#32;phd,
+36 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::string&#32;honors,
+37 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::string&#32;additional,
+38 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::string&#32;graduated_from,
+39 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;age,
+40 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::string&#32;birth,
+41 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::string&#32;joined_on);
+42 
+43 
+44 &#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_class_professor_1a57658b4b45c76c490d3077975437f2db">get_id</link>();
+45 &#32;&#32;&#32;std::string&#32;<link linkend="_class_professor_1a9a33b27fb6082ed5a36631fc85152b57">get_phd</link>();
+46 &#32;&#32;&#32;std::string&#32;<link linkend="_class_professor_1ab151f56fe1d6c58bbd1386a806d374e5">get_honors</link>();
+47 &#32;&#32;&#32;std::string&#32;get_additional();
+48 &#32;&#32;&#32;std::string&#32;<link linkend="_class_professor_1a61def81c25db5836d6f5a4e218bd4047">get_graduated_from</link>();
+49 &#32;&#32;&#32;std::string&#32;<link linkend="_class_professor_1a3e578e6bec6536de6c045c0e71fbd8b1">get_joined_on</link>();
+50 &#32;&#32;&#32;std::string&#32;<link linkend="_class_professor_1a04802dfdd75b16ef91f779092602e9b8">get_birth</link>();
+51 &#32;&#32;&#32;std::vector&lt;std::string&gt;&#32;<link linkend="_class_professor_1a8197260e8a689fb6e958293a9e64a75f">get_courses</link>();
+52 &#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_professor_1a081da51951df7e949e16ea9f1a4484ae">set_courses</link>(std::string&#32;course);
+53 &#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_professor_1a379e0e5738e4f4aff57bf33c17e276f4">unenroll</link>(std::string);
+54 };
+55 
+56 <emphasis role="preprocessor">#endif&#32;</emphasis><emphasis role="comment">//&#32;PROFESSOR_H</emphasis>
+</programlisting></section>

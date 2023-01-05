@@ -1,0 +1,96 @@
+\hypertarget{course_8h_source}{}\doxysection{course.\+h}
+\label{course_8h_source}\index{F:/CUFE/SBME 2022/First Term/Data Structure/Final Project/Mo3id REPO/final-\/project-\/brogrammers/models/course.h@{F:/CUFE/SBME 2022/First Term/Data Structure/Final Project/Mo3id REPO/final-\/project-\/brogrammers/models/course.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ COURSE\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ COURSE\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <map>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <QDateTime>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}student.h"{}}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}professor.h"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <QMetaEnum>}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{enum}\ WeekDay\ \{\ MONDAY,\ TUESDAY,\ WEDNESDAY,\ THURSDAY,\ FRIDAY,\ SATURDAY,\ SUNDAY\ \};}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00022\ \textcolor{keyword}{enum}\ CourseType\ \{\ MANDATORY,\ ELECTIVE\ \};}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00029\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_course}{Course}}\ \{}
+\DoxyCodeLine{00030\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00031\ \ \ \ \ std::string\ name;}
+\DoxyCodeLine{00032\ \ \ \ \ std::string\ code;}
+\DoxyCodeLine{00033\ \ \ \ \ std::string\ department;}
+\DoxyCodeLine{00034\ \ \ \ \ std::string\ type;}
+\DoxyCodeLine{00035\ \ \ \ \ std::string\ hall;}
+\DoxyCodeLine{00036\ \ \ \ \ std::string\ day;}
+\DoxyCodeLine{00037\ \ \ \ \ QTime\ start\_time;}
+\DoxyCodeLine{00038\ \ \ \ \ QTime\ end\_time;}
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordtype}{int}\ academic\_year;}
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{int}\ ID;}
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{int}\ count\_student;}
+\DoxyCodeLine{00042\ \ \ \ \ std::vector<Student*>\ students;}
+\DoxyCodeLine{00043\ \ \ \ \ std::vector\ <Professor*>\ professors;}
+\DoxyCodeLine{00044\ \ \ \ \ std::map<Student*,\ float>\ students\_grades;}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00046\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00047\ \ \ \ \ \mbox{\hyperlink{class_course}{Course}}(\textcolor{keywordtype}{int}\ ID,}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \ \ \ std::string\ name,}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \ \ \ std::string\ department,}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \ \ \ std::string\ type,}
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \ \ \ std::string\ hall,}
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \ \ \ std::string\ day,}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \ \ \ QTime\ start\_time,}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \ \ \ QTime\ end\_time,}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ academic\_year,}
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ count\_student);}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00060\ \ \ \ \ std::string\ \mbox{\hyperlink{class_course_a6c414036099f135f59025d4c7d5d7de5}{get\_name}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00061\ \ \ \ \ std::string\ \mbox{\hyperlink{class_course_a8c5dd2993dca5838064abf68de9577e8}{get\_code}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00062\ \ \ \ \ std::string\ \mbox{\hyperlink{class_course_ab4d233f6046dc32ad7bf8d8d397c3c0f}{get\_department}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00063\ \ \ \ \ std::string\ \mbox{\hyperlink{class_course_a71221757e53e88167a77969852cee804}{get\_type}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00064\ \ \ \ \ std::string\ \mbox{\hyperlink{class_course_a9142cfe2e4f5ac4f5f68781e47e3ae2b}{get\_hall}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00065\ \ \ \ \ std::string\ \mbox{\hyperlink{class_course_ae2053665f4fbb4202ce5a90466d9da48}{get\_day}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00066\ \ \ \ \ QTime\ \mbox{\hyperlink{class_course_ae073670680fdb495f440863b34b8830c}{get\_start\_time}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00067\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_course_a8cbd97adb7c984aff426a6a938c26f7b}{get\_academic\_year}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00068\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_course_aacd3fb47f191a8e3ff7e46b62156b744}{get\_ID}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00069\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_course_ab7e460f83d98d4a4fa76d66c5f77094f}{get\_num\_std}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00070\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_course_ab86562a6bff7f93902c35654b5c20806}{dismiss\_course}}();}
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00072\ }
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00074\ }
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00079\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_course_a90f4a66f9a4721c6ce74aec80584584c}{add\_student}}(\mbox{\hyperlink{class_student}{Student}}*);}
+\DoxyCodeLine{00080\ }
+\DoxyCodeLine{00084\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_course_a2e5cb8ed4aba59634e01471f05ffb8f0}{delete\_student}}(\mbox{\hyperlink{class_student}{Student}}*);}
+\DoxyCodeLine{00085\ }
+\DoxyCodeLine{00090\ \ \ \ \ \mbox{\hyperlink{class_student}{Student}}*\ \mbox{\hyperlink{class_course_a4cc8b59fe4784a36b307dfd5bce15fa9}{find\_student\_by\_name}}(std::string);}
+\DoxyCodeLine{00091\ }
+\DoxyCodeLine{00092\ \ \ \ \ \textcolor{comment}{//\ Edit\ the\ grade\ of\ a\ given\ student\ in\ the\ students\_grades\ map}}
+\DoxyCodeLine{00093\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_course_a9f927402c7df3a2606160f2f233ff6ff}{edit\_student\_grade}}(\mbox{\hyperlink{class_student}{Student}}*,\ \textcolor{keywordtype}{float});}
+\DoxyCodeLine{00094\ }
+\DoxyCodeLine{00095\ \ \ \ \ \textcolor{comment}{//\ Add\ a\ given\ professor\ into\ the\ professors\ vector\ in\ the\ course}}
+\DoxyCodeLine{00096\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_course_a7dce85c53692b5f03e43449649494364}{add\_professor}}(\mbox{\hyperlink{class_professor}{Professor}}*);}
+\DoxyCodeLine{00097\ }
+\DoxyCodeLine{00098\ \ \ \ \ \textcolor{comment}{//\ Remove\ a\ given\ professor\ from\ the\ professors\ vector\ in\ the\ course}}
+\DoxyCodeLine{00099\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_course_af8d6736d7d9390807773cfd001cb2c65}{delete\_professor}}(\mbox{\hyperlink{class_professor}{Professor}}*);}
+\DoxyCodeLine{00100\ }
+\DoxyCodeLine{00101\ \ \ \ \ \textcolor{comment}{//\ Search\ for\ a\ professor\ with\ a\ given\ name\ in\ the\ professors\ vector\ in\ the\ course}}
+\DoxyCodeLine{00102\ \ \ \ \ \mbox{\hyperlink{class_professor}{Professor}}*\ \mbox{\hyperlink{class_course_a0b4cc0e46f46dde155fe5f120036e7ab}{find\_professor\_by\_name}}(std::string);}
+\DoxyCodeLine{00103\ }
+\DoxyCodeLine{00104\ \ \ \ \ \textcolor{keywordtype}{void}\ set\_students(\mbox{\hyperlink{class_student}{Student}}*\ student);}
+\DoxyCodeLine{00105\ }
+\DoxyCodeLine{00106\ \ \ \ \ \textcolor{keywordtype}{void}\ set\_students\_to\_grades(\mbox{\hyperlink{class_student}{Student}}*\ student\ ,\ \textcolor{keywordtype}{float}\ grade);}
+\DoxyCodeLine{00107\ \};}
+\DoxyCodeLine{00108\ }
+\DoxyCodeLine{00109\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ COURSE\_H}}
+
+\end{DoxyCode}

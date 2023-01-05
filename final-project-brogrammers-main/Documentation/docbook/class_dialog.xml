@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_dialog" xml:lang="en-US">
+<title>Dialog Class Reference</title>
+<indexterm><primary>Dialog</primary></indexterm>
+<para>
+
+<para>In this class, there are all processes that will be run in case of error occur. </para>
+ 
+</para>
+<para>
+<computeroutput>#include &lt;dialog.h&gt;</computeroutput>
+</para>
+<para>Inheritance diagram for Dialog:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_dialog.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_dialog_1a94fa4f01c4ae7e712c3c26a558417d93">Dialog</link> (QWidget *parent=nullptr, QString message=&quot;Failed&quot;)</para>
+
+<para>This is a Page that will appear in case of errors. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>In this class, there are all processes that will be run in case of error occur. </para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_dialog_1a94fa4f01c4ae7e712c3c26a558417d93"/><section>
+    <title>Dialog()</title>
+<indexterm><primary>Dialog</primary><secondary>Dialog</secondary></indexterm>
+<indexterm><primary>Dialog</primary><secondary>Dialog</secondary></indexterm>
+<para><computeroutput>Dialog::Dialog (QWidget * parent = <computeroutput>nullptr</computeroutput>
+, QString message = <computeroutput>&quot;Failed&quot;</computeroutput>
+)<computeroutput>[explicit]</computeroutput></computeroutput></para><para>
+
+<para>This is a Page that will appear in case of errors. </para>
+</para>
+
+<para>If the user enters any invalid data during login or adding new professors or anything else this page will appear. <formalpara><title>Author</title>
+
+<para>Amir Hesham </para>
+</formalpara>
+<formalpara><title>Copyright</title>
+
+<para>Brogrammers. </para>
+</formalpara>
+</para>
+</section>
+<para>
+The documentation for this class was generated from the following files:</para>
+F:/CUFE/SBME 2022/First Term/Data Structure/Final Project/Mo3id REPO/final-project-brogrammers/controllers/dialog.hF:/CUFE/SBME 2022/First Term/Data Structure/Final Project/Mo3id REPO/final-project-brogrammers/controllers/dialog.cpp</section>
+</section>

@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_course_8h_source" xml:lang="en-US">
+<title>course.h</title>
+<indexterm><primary>F:/CUFE/SBME 2022/First Term/Data Structure/Final Project/Mo3id REPO/final-project-brogrammers/models/course.h</primary></indexterm>
+<programlisting linenumbering="unnumbered">1 <emphasis role="preprocessor">#ifndef&#32;COURSE_H</emphasis>
+2 <emphasis role="preprocessor">#define&#32;COURSE_H</emphasis>
+3 
+4 <emphasis role="preprocessor">#include&#32;&lt;iostream&gt;</emphasis>
+5 <emphasis role="preprocessor">#include&#32;&lt;vector&gt;</emphasis>
+6 <emphasis role="preprocessor">#include&#32;&lt;map&gt;</emphasis>
+7 <emphasis role="preprocessor">#include&#32;&lt;QDateTime&gt;</emphasis>
+8 <emphasis role="preprocessor">#include&#32;&quot;student.h&quot;</emphasis>
+9 <emphasis role="preprocessor">#include&#32;&quot;professor.h&quot;</emphasis>
+10 <emphasis role="preprocessor">#include&#32;&lt;QMetaEnum&gt;</emphasis>
+11 
+12 
+13 
+14 
+15 
+17 <emphasis role="keyword">enum</emphasis>&#32;WeekDay&#32;{&#32;MONDAY,&#32;TUESDAY,&#32;WEDNESDAY,&#32;THURSDAY,&#32;FRIDAY,&#32;SATURDAY,&#32;SUNDAY&#32;};
+18 
+22 <emphasis role="keyword">enum</emphasis>&#32;CourseType&#32;{&#32;MANDATORY,&#32;ELECTIVE&#32;};
+23 
+29 <emphasis role="keyword">class&#32;</emphasis><link linkend="_class_course">Course</link>&#32;{
+30 <emphasis role="keyword">private</emphasis>:
+31 &#32;&#32;&#32;&#32;std::string&#32;name;
+32 &#32;&#32;&#32;&#32;std::string&#32;code;
+33 &#32;&#32;&#32;&#32;std::string&#32;department;
+34 &#32;&#32;&#32;&#32;std::string&#32;type;
+35 &#32;&#32;&#32;&#32;std::string&#32;hall;
+36 &#32;&#32;&#32;&#32;std::string&#32;day;
+37 &#32;&#32;&#32;&#32;QTime&#32;start_time;
+38 &#32;&#32;&#32;&#32;QTime&#32;end_time;
+39 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;academic_year;
+40 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;ID;
+41 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;count_student;
+42 &#32;&#32;&#32;&#32;std::vector&lt;Student*&gt;&#32;students;
+43 &#32;&#32;&#32;&#32;std::vector&#32;&lt;Professor*&gt;&#32;professors;
+44 &#32;&#32;&#32;&#32;std::map&lt;Student*,&#32;float&gt;&#32;students_grades;
+45 
+46 <emphasis role="keyword">public</emphasis>:
+47 &#32;&#32;&#32;&#32;<link linkend="_class_course">Course</link>(<emphasis role="keywordtype">int</emphasis>&#32;ID,
+48 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::string&#32;name,
+49 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::string&#32;department,
+50 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::string&#32;type,
+51 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::string&#32;hall,
+52 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::string&#32;day,
+53 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;QTime&#32;start_time,
+54 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;QTime&#32;end_time,
+55 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;academic_year,
+56 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;count_student);
+57 
+58 
+59 
+60 &#32;&#32;&#32;&#32;std::string&#32;<link linkend="_class_course_1a6c414036099f135f59025d4c7d5d7de5">get_name</link>()&#32;<emphasis role="keyword">const</emphasis>;
+61 &#32;&#32;&#32;&#32;std::string&#32;<link linkend="_class_course_1a8c5dd2993dca5838064abf68de9577e8">get_code</link>()&#32;<emphasis role="keyword">const</emphasis>;
+62 &#32;&#32;&#32;&#32;std::string&#32;<link linkend="_class_course_1ab4d233f6046dc32ad7bf8d8d397c3c0f">get_department</link>()&#32;<emphasis role="keyword">const</emphasis>;
+63 &#32;&#32;&#32;&#32;std::string&#32;<link linkend="_class_course_1a71221757e53e88167a77969852cee804">get_type</link>()&#32;<emphasis role="keyword">const</emphasis>;
+64 &#32;&#32;&#32;&#32;std::string&#32;<link linkend="_class_course_1a9142cfe2e4f5ac4f5f68781e47e3ae2b">get_hall</link>()&#32;<emphasis role="keyword">const</emphasis>;
+65 &#32;&#32;&#32;&#32;std::string&#32;<link linkend="_class_course_1ae2053665f4fbb4202ce5a90466d9da48">get_day</link>()&#32;<emphasis role="keyword">const</emphasis>;
+66 &#32;&#32;&#32;&#32;QTime&#32;<link linkend="_class_course_1ae073670680fdb495f440863b34b8830c">get_start_time</link>()&#32;<emphasis role="keyword">const</emphasis>;
+67 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_class_course_1a8cbd97adb7c984aff426a6a938c26f7b">get_academic_year</link>()&#32;<emphasis role="keyword">const</emphasis>;
+68 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_class_course_1aacd3fb47f191a8e3ff7e46b62156b744">get_ID</link>()&#32;<emphasis role="keyword">const</emphasis>;
+69 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_class_course_1ab7e460f83d98d4a4fa76d66c5f77094f">get_num_std</link>()&#32;<emphasis role="keyword">const</emphasis>;
+70 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_course_1ab86562a6bff7f93902c35654b5c20806">dismiss_course</link>();
+71 
+72 
+73 
+74 
+75 
+79 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_course_1a90f4a66f9a4721c6ce74aec80584584c">add_student</link>(<link linkend="_class_student">Student</link>*);
+80 
+84 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_course_1a2e5cb8ed4aba59634e01471f05ffb8f0">delete_student</link>(<link linkend="_class_student">Student</link>*);
+85 
+90 &#32;&#32;&#32;&#32;<link linkend="_class_student">Student</link>*&#32;<link linkend="_class_course_1a4cc8b59fe4784a36b307dfd5bce15fa9">find_student_by_name</link>(std::string);
+91 
+92 &#32;&#32;&#32;&#32;<emphasis role="comment">//&#32;Edit&#32;the&#32;grade&#32;of&#32;a&#32;given&#32;student&#32;in&#32;the&#32;students_grades&#32;map</emphasis>
+93 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_course_1a9f927402c7df3a2606160f2f233ff6ff">edit_student_grade</link>(<link linkend="_class_student">Student</link>*,&#32;<emphasis role="keywordtype">float</emphasis>);
+94 
+95 &#32;&#32;&#32;&#32;<emphasis role="comment">//&#32;Add&#32;a&#32;given&#32;professor&#32;into&#32;the&#32;professors&#32;vector&#32;in&#32;the&#32;course</emphasis>
+96 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_course_1a7dce85c53692b5f03e43449649494364">add_professor</link>(<link linkend="_class_professor">Professor</link>*);
+97 
+98 &#32;&#32;&#32;&#32;<emphasis role="comment">//&#32;Remove&#32;a&#32;given&#32;professor&#32;from&#32;the&#32;professors&#32;vector&#32;in&#32;the&#32;course</emphasis>
+99 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_course_1af8d6736d7d9390807773cfd001cb2c65">delete_professor</link>(<link linkend="_class_professor">Professor</link>*);
+100 
+101 &#32;&#32;&#32;&#32;<emphasis role="comment">//&#32;Search&#32;for&#32;a&#32;professor&#32;with&#32;a&#32;given&#32;name&#32;in&#32;the&#32;professors&#32;vector&#32;in&#32;the&#32;course</emphasis>
+102 &#32;&#32;&#32;&#32;<link linkend="_class_professor">Professor</link>*&#32;<link linkend="_class_course_1a0b4cc0e46f46dde155fe5f120036e7ab">find_professor_by_name</link>(std::string);
+103 
+104 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;set_students(<link linkend="_class_student">Student</link>*&#32;student);
+105 
+106 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;set_students_to_grades(<link linkend="_class_student">Student</link>*&#32;student&#32;,&#32;<emphasis role="keywordtype">float</emphasis>&#32;grade);
+107 };
+108 
+109 <emphasis role="preprocessor">#endif&#32;</emphasis><emphasis role="comment">//&#32;COURSE_H</emphasis>
+</programlisting></section>

@@ -1,0 +1,414 @@
+.TH "Course" 3 "Mon Jan 2 2023" "Brogrammers" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Course \- In this class, there are all features and relations between Courses and All members in the learning Process\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <course\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBCourse\fP (int ID, std::string name, std::string department, std::string type, std::string hall, std::string day, QTime start_time, QTime end_time, int academic_year, int count_student)"
+.br
+.RI "\fBCourse\fP Class Features\&. "
+.ti -1c
+.RI "std::string \fBget_name\fP () const"
+.br
+.RI "Get the \fBCourse\fP's Name\&. "
+.ti -1c
+.RI "std::string \fBget_code\fP () const"
+.br
+.RI "Get the course's Code\&. "
+.ti -1c
+.RI "std::string \fBget_department\fP () const"
+.br
+.RI "Get the course's Department\&. "
+.ti -1c
+.RI "std::string \fBget_type\fP () const"
+.br
+.RI "Get the course's Type\&. "
+.ti -1c
+.RI "std::string \fBget_hall\fP () const"
+.br
+.RI "Get the course's Hall (Lecture Place) "
+.ti -1c
+.RI "std::string \fBget_day\fP () const"
+.br
+.RI "Get the \fBCourse\fP's Day\&. "
+.ti -1c
+.RI "QTime \fBget_start_time\fP () const"
+.br
+.RI "Get the course's Start Time in the Semester\&. "
+.ti -1c
+.RI "int \fBget_academic_year\fP () const"
+.br
+.RI "Get the course's Academic Year\&. "
+.ti -1c
+.RI "int \fBget_ID\fP () const"
+.br
+.RI "Get the course's ID\&. "
+.ti -1c
+.RI "int \fBget_num_std\fP () const"
+.br
+.RI "Counting the student numbers in the course\&. "
+.ti -1c
+.RI "void \fBdismiss_course\fP ()"
+.br
+.RI "Unenroll the \fBStudent\fP from a certain course\&. "
+.ti -1c
+.RI "void \fBadd_student\fP (\fBStudent\fP *)"
+.br
+.RI "add_student Add a given student into the students vector in the course "
+.ti -1c
+.RI "void \fBdelete_student\fP (\fBStudent\fP *)"
+.br
+.RI "delete_student Remove a given student from the students vector in the course "
+.ti -1c
+.RI "\fBStudent\fP * \fBfind_student_by_name\fP (std::string)"
+.br
+.RI "find_student_by_name Search for a student with a given name in the students vector in the course "
+.ti -1c
+.RI "void \fBedit_student_grade\fP (\fBStudent\fP *, float)"
+.br
+.RI "Edit the Grade of a student\&. "
+.ti -1c
+.RI "void \fBadd_professor\fP (\fBProfessor\fP *)"
+.br
+.RI "Adding New Professors in the \fBProfessor\fP's Vector\&. "
+.ti -1c
+.RI "void \fBdelete_professor\fP (\fBProfessor\fP *)"
+.br
+.RI "Deleting a Professsor From the Prfessor's Vector\&. "
+.ti -1c
+.RI "\fBProfessor\fP * \fBfind_professor_by_name\fP (std::string)"
+.br
+.RI "Search for the \fBProfessor\fP by his/her name\&. "
+.ti -1c
+.RI "void \fBset_students\fP (\fBStudent\fP *student)"
+.br
+.ti -1c
+.RI "void \fBset_students_to_grades\fP (\fBStudent\fP *student, float grade)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+In this class, there are all features and relations between Courses and All members in the learning Process\&. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Course::Course (int ID, std::string name, std::string department, std::string type, std::string hall, std::string day, QTime start_time, QTime end_time, int academic_year, int count_student)"
+
+.PP
+\fBCourse\fP Class Features\&. This class is used to link the data of Courses to either students or professors\&. 
+.PP
+\fBAuthor\fP
+.RS 4
+Muhanned Abdallah & Omar Mahmoud 
+.RE
+.PP
+\fBCopyright\fP
+.RS 4
+Brogrammers\&. 
+.RE
+.PP
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void Course::add_professor (\fBProfessor\fP * professor)"
+
+.PP
+Adding New Professors in the \fBProfessor\fP's Vector\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fINew_Professor\fP That entered the \fBCourse\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Nothing to be returend 
+.RE
+.PP
+
+.SS "void Course::add_student (\fBStudent\fP * student)"
+
+.PP
+add_student Add a given student into the students vector in the course 
+.PP
+\fBParameters\fP
+.RS 4
+\fIstudent\fP - The student to be added
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Nothing to be returend 
+.RE
+.PP
+
+.SS "void Course::delete_professor (\fBProfessor\fP * professor)"
+
+.PP
+Deleting a Professsor From the Prfessor's Vector\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIDeleted_Professor\fP That will be removed from the \fBCourse\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Nothing to be returend 
+.RE
+.PP
+
+.SS "void Course::delete_student (\fBStudent\fP * student)"
+
+.PP
+delete_student Remove a given student from the students vector in the course 
+.PP
+\fBParameters\fP
+.RS 4
+\fIstudent\fP - The student to be removed
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Nothing to be returend 
+.RE
+.PP
+
+.SS "void Course::dismiss_course ()"
+
+.PP
+Unenroll the \fBStudent\fP from a certain course\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fINULL\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Nothiing to be returned 
+.RE
+.PP
+
+.SS "void Course::edit_student_grade (\fBStudent\fP * student, float grade)"
+
+.PP
+Edit the Grade of a student\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIstudent\fP We want to edit his/her grade 
+.br
+\fIgrade\fP That will be edited 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Nothing to be returned 
+.RE
+.PP
+
+.SS "\fBProfessor\fP * Course::find_professor_by_name (std::string name)"
+
+.PP
+Search for the \fBProfessor\fP by his/her name\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIProfessor_Name\fP as a search parameter 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Nothing to be returend 
+.RE
+.PP
+
+.SS "\fBStudent\fP * Course::find_student_by_name (std::string name)"
+
+.PP
+find_student_by_name Search for a student with a given name in the students vector in the course 
+.PP
+\fBParameters\fP
+.RS 4
+\fIstring\fP - The student name to be found 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+student -
+.RE
+.PP
+The \fBStudent\fP Name if found, else Nothing to be returend 
+.SS "int Course::get_academic_year () const"
+
+.PP
+Get the course's Academic Year\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fINULL\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+course's Academic Year 
+.RE
+.PP
+
+.SS "std::string Course::get_code () const"
+
+.PP
+Get the course's Code\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fINULL\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+course's Code 
+.RE
+.PP
+
+.SS "std::string Course::get_day () const"
+
+.PP
+Get the \fBCourse\fP's Day\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fINULL\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+course's Day 
+.RE
+.PP
+
+.SS "std::string Course::get_department () const"
+
+.PP
+Get the course's Department\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fINULL\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+course's Department 
+.RE
+.PP
+
+.SS "std::string Course::get_hall () const"
+
+.PP
+Get the course's Hall (Lecture Place) 
+.PP
+\fBParameters\fP
+.RS 4
+\fINULL\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+course's Hall 
+.RE
+.PP
+
+.SS "int Course::get_ID () const"
+
+.PP
+Get the course's ID\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fINULL\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+course's ID 
+.RE
+.PP
+
+.SS "std::string Course::get_name () const"
+
+.PP
+Get the \fBCourse\fP's Name\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fINULL\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+course's Name 
+.RE
+.PP
+
+.SS "int Course::get_num_std () const"
+
+.PP
+Counting the student numbers in the course\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fINULL\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Number of students 
+.RE
+.PP
+
+.SS "QTime Course::get_start_time () const"
+
+.PP
+Get the course's Start Time in the Semester\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fINULL\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+course's Speciality 
+.RE
+.PP
+
+.SS "std::string Course::get_type () const"
+
+.PP
+Get the course's Type\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fINULL\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+course's Type 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Brogrammers from the source code\&.

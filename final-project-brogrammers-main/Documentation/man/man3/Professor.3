@@ -1,0 +1,243 @@
+.TH "Professor" 3 "Mon Jan 2 2023" "Brogrammers" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Professor \- In this class, there are all features and relations between Professors and courses\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <professor\&.h>\fP
+.PP
+Inherits \fBUser\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBProfessor\fP (std::string name, std::string email, std::string phone, std::string department, std::string phd, std::string honors, std::string additional, std::string graduated_from, int age, std::string birth, std::string joined_on)"
+.br
+.ti -1c
+.RI "int \fBget_id\fP ()"
+.br
+.RI "Get the \fBProfessor\fP's ID\&. "
+.ti -1c
+.RI "std::string \fBget_phd\fP ()"
+.br
+.RI "Get the \fBProfessor\fP's PHD Name\&. "
+.ti -1c
+.RI "std::string \fBget_honors\fP ()"
+.br
+.RI "Get the \fBProfessor\fP's Honors\&. "
+.ti -1c
+.RI "std::string \fBget_additional\fP ()"
+.br
+.ti -1c
+.RI "std::string \fBget_graduated_from\fP ()"
+.br
+.RI "Get the \fBProfessor\fP's Graduation University\&. "
+.ti -1c
+.RI "std::string \fBget_joined_on\fP ()"
+.br
+.RI "Get the \fBProfessor\fP's Joining Date\&. "
+.ti -1c
+.RI "std::string \fBget_birth\fP ()"
+.br
+.RI "Get the \fBProfessor\fP's Date of Birth\&. "
+.ti -1c
+.RI "std::vector< std::string > \fBget_courses\fP ()"
+.br
+.RI "Get the \fBProfessor\fP's courses\&. "
+.ti -1c
+.RI "void \fBset_courses\fP (std::string course)"
+.br
+.RI "Organize the \fBProfessor\fP's Courses\&. "
+.ti -1c
+.RI "void \fBunenroll\fP (std::string)"
+.br
+.RI "Remove the course from the \fBProfessor\fP profile\&. "
+.in -1c
+
+Public Member Functions inherited from \fBUser\fP
+.in +1c
+.ti -1c
+.RI "\fBUser\fP (std::string name, std::string email, std::string phone, std::string department, int age)"
+.br
+.RI "\fBUser\fP Class Features\&. "
+.ti -1c
+.RI "\fBUser\fP (std::string name, std::string email, std::string phone, int age)"
+.br
+.ti -1c
+.RI "std::string \fBgetName\fP () const"
+.br
+.RI "Get the \fBUser\fP's Name\&. "
+.ti -1c
+.RI "std::string \fBgetEmail\fP () const"
+.br
+.RI "Get the \fBUser\fP's Email\&. "
+.ti -1c
+.RI "std::string \fBgetPhone\fP () const"
+.br
+.RI "Get the \fBUser\fP's Phone\&. "
+.ti -1c
+.RI "std::string \fBgetDepartment\fP () const"
+.br
+.RI "Get the \fBUser\fP's Department\&. "
+.ti -1c
+.RI "int \fBgetAge\fP () const"
+.br
+.RI "Get the \fBUser\fP's Age\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+In this class, there are all features and relations between Professors and courses\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "std::string Professor::get_birth ()"
+
+.PP
+Get the \fBProfessor\fP's Date of Birth\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fINULL\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+\fBProfessor\fP's Date of Birth 
+.RE
+.PP
+
+.SS "std::vector< std::string > Professor::get_courses ()"
+
+.PP
+Get the \fBProfessor\fP's courses\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fINULL\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+\fBProfessor\fP's courses 
+.RE
+.PP
+
+.SS "std::string Professor::get_graduated_from ()"
+
+.PP
+Get the \fBProfessor\fP's Graduation University\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fINULL\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+\fBProfessor\fP's Graduation University 
+.RE
+.PP
+
+.SS "std::string Professor::get_honors ()"
+
+.PP
+Get the \fBProfessor\fP's Honors\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fINULL\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+\fBProfessor\fP's Honors 
+.RE
+.PP
+
+.SS "int Professor::get_id ()"
+
+.PP
+Get the \fBProfessor\fP's ID\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fINULL\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+\fBProfessor\fP's ID 
+.RE
+.PP
+
+.SS "std::string Professor::get_joined_on ()"
+
+.PP
+Get the \fBProfessor\fP's Joining Date\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fINULL\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+\fBProfessor\fP's Joining Date 
+.RE
+.PP
+
+.SS "std::string Professor::get_phd ()"
+
+.PP
+Get the \fBProfessor\fP's PHD Name\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fINULL\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+\fBProfessor\fP's PHD Name 
+.RE
+.PP
+
+.SS "void Professor::set_courses (std::string course)"
+
+.PP
+Organize the \fBProfessor\fP's Courses\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI\fBCourse\fP\fP To add Courses that each professor is the lecturer of it 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Nothing to be returned 
+.RE
+.PP
+
+.SS "void Professor::unenroll (std::string course)"
+
+.PP
+Remove the course from the \fBProfessor\fP profile\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fICourse_Name\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Nothing to be returned 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Brogrammers from the source code\&.

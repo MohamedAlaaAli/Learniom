@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_database" xml:lang="en-US">
+<title>Database Class Reference</title>
+<indexterm><primary>Database</primary></indexterm>
+<para>
+
+<para>This Class has the used database (Professors, Students, Admins and Courses) </para>
+ 
+</para>
+<para>
+<computeroutput>#include &lt;database.h&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_database_1a4703c80e6969d33565ea340f768fdadf">Database</link> ()</para>
+
+<para><link linkend="_class_database">Database</link> Class Components of the Application. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_database_1a72093d83df4e0d6e6447e844f565dc51"/>std::vector&lt; <link linkend="_class_student">Student</link> * &gt; <emphasis role="strong">get_students_mock_data</emphasis> ()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_database_1a51a28b53211a57dbf9c834704d53f6c0"/>std::vector&lt; <link linkend="_class_professor">Professor</link> * &gt; <emphasis role="strong">get_professors_mock_data</emphasis> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_class_database_1ac3ea6c0082a662ab43a06a4c0dbc01b5"/>std::vector&lt; <link linkend="_class_admin">Admin</link> * &gt; <emphasis role="strong">admins</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_database_1abd8d0619cc09bfb0e5539058214daaaa"/>std::vector&lt; <link linkend="_class_student">Student</link> * &gt; <emphasis role="strong">students</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_database_1a5c3b09cdf6106dce3ce4176b7d789082"/>std::vector&lt; <link linkend="_class_professor">Professor</link> * &gt; <emphasis role="strong">professors</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_database_1a6951fb0c81cff64df580909ef9cbe07d"/>std::vector&lt; <link linkend="_class_course">Course</link> * &gt; <emphasis role="strong">courses</emphasis></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>This Class has the used database (Professors, Students, Admins and Courses) </para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_database_1a4703c80e6969d33565ea340f768fdadf"/><section>
+    <title>Database()</title>
+<indexterm><primary>Database</primary><secondary>Database</secondary></indexterm>
+<indexterm><primary>Database</primary><secondary>Database</secondary></indexterm>
+<para><computeroutput>Database::Database ( )</computeroutput></para><para>
+
+<para><link linkend="_class_database">Database</link> Class Components of the Application. </para>
+</para>
+
+<para>This class helps in adding or deleting (admins, students, professors and courses) <formalpara><title>Author</title>
+
+<para>Mohammed Alaa &amp; Amir Hesham </para>
+</formalpara>
+<formalpara><title>Copyright</title>
+
+<para>Brogrammers. </para>
+</formalpara>
+</para>
+
+<para><itemizedlist>
+<listitem>
+<para>Vector to manage adding or deleting admins</para>
+</listitem><listitem>
+<para>Vector to manage adding or deleting Students</para>
+</listitem><listitem>
+<para>Vector to manage adding or deleting Professors</para>
+</listitem><listitem>
+<para>Vector to manage adding or deleting Courses</para>
+</listitem></itemizedlist>
+</para>
+</section>
+<para>
+The documentation for this class was generated from the following files:</para>
+F:/CUFE/SBME 2022/First Term/Data Structure/Final Project/Mo3id REPO/final-project-brogrammers/models/database.hF:/CUFE/SBME 2022/First Term/Data Structure/Final Project/Mo3id REPO/final-project-brogrammers/models/database.cpp</section>
+</section>

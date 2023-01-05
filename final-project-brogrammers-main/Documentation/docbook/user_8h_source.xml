@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_user_8h_source" xml:lang="en-US">
+<title>user.h</title>
+<indexterm><primary>F:/CUFE/SBME 2022/First Term/Data Structure/Final Project/Mo3id REPO/final-project-brogrammers/models/user.h</primary></indexterm>
+<programlisting linenumbering="unnumbered">1 <emphasis role="preprocessor">#ifndef&#32;USER_H</emphasis>
+2 <emphasis role="preprocessor">#define&#32;USER_H</emphasis>
+3 
+4 
+11 <emphasis role="preprocessor">#include&lt;iostream&gt;</emphasis>
+12 
+13 <emphasis role="keyword">class&#32;</emphasis><link linkend="_class_user">User</link>{
+14 <emphasis role="keyword">private</emphasis>:
+15 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::string&#32;name;
+16 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::string&#32;email;
+17 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::string&#32;phone;
+18 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::string&#32;department;
+19 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;age;
+20 <emphasis role="keyword">public</emphasis>:
+21 &#32;&#32;&#32;&#32;<link linkend="_class_user">User</link>(std::string&#32;name,
+22 &#32;&#32;&#32;&#32;std::string&#32;email,
+23 &#32;&#32;&#32;&#32;std::string&#32;phone,
+24 &#32;&#32;&#32;&#32;std::string&#32;department,
+25 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;age);
+26 
+27 &#32;&#32;&#32;&#32;<link linkend="_class_user">User</link>(std::string&#32;name,
+28 &#32;&#32;&#32;&#32;std::string&#32;email,
+29 &#32;&#32;&#32;&#32;std::string&#32;phone,
+30 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;age);
+31 
+32 &#32;&#32;&#32;&#32;std::string&#32;<link linkend="_class_user_1a446a64e63adafbc2e1428532275ad6a1">getName</link>()&#32;<emphasis role="keyword">const</emphasis>;
+33 &#32;&#32;&#32;&#32;std::string&#32;<link linkend="_class_user_1a68c520e78268ba63c97ff04b6fb210a1">getEmail</link>()&#32;<emphasis role="keyword">const</emphasis>;
+34 &#32;&#32;&#32;&#32;std::string&#32;<link linkend="_class_user_1aa6b3271fff710eee0b406cc270fe7071">getPhone</link>()&#32;<emphasis role="keyword">const</emphasis>;
+35 &#32;&#32;&#32;&#32;std::string&#32;<link linkend="_class_user_1a2da830cf1d7f4f70fb1cdb1cf179a464">getDepartment</link>()&#32;<emphasis role="keyword">const</emphasis>;
+36 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_class_user_1a71385d4c5a3a509af5024b3c8e1e1aa9">getAge</link>()&#32;<emphasis role="keyword">const</emphasis>;
+37 };
+38 
+39 <emphasis role="preprocessor">#endif&#32;</emphasis><emphasis role="comment">//&#32;USER_H</emphasis>
+</programlisting></section>

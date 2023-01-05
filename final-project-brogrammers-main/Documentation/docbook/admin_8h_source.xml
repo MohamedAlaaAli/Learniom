@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_admin_8h_source" xml:lang="en-US">
+<title>admin.h</title>
+<indexterm><primary>F:/CUFE/SBME 2022/First Term/Data Structure/Final Project/Mo3id REPO/final-project-brogrammers/models/admin.h</primary></indexterm>
+<programlisting linenumbering="unnumbered">1 <emphasis role="preprocessor">#ifndef&#32;ADMIN_H</emphasis>
+2 <emphasis role="preprocessor">#define&#32;ADMIN_H</emphasis>
+3 <emphasis role="preprocessor">#include&#32;&lt;iostream&gt;</emphasis>
+4 <emphasis role="preprocessor">#include&#32;&quot;QDateTime&quot;</emphasis>
+5 <emphasis role="preprocessor">#include&#32;&quot;user.h&quot;</emphasis>
+6 
+7 
+8 
+14 <emphasis role="keyword">class&#32;</emphasis><link linkend="_class_admin">Admin</link>&#32;:&#32;<emphasis role="keyword">public</emphasis>&#32;<link linkend="_class_user">User</link>{
+15 
+16 <emphasis role="keyword">private</emphasis>:
+17 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;ID;
+18 &#32;&#32;&#32;&#32;std::string&#32;speciality;
+19 &#32;&#32;&#32;&#32;std::string&#32;title;
+20 &#32;&#32;&#32;&#32;std::string&#32;password;
+21 &#32;&#32;&#32;&#32;QDateTime&#32;creation_date;
+22 &#32;&#32;&#32;&#32;std::string&#32;biography;
+23 
+24 
+25 <emphasis role="keyword">public</emphasis>:
+26 &#32;&#32;&#32;&#32;<link linkend="_class_admin">Admin</link>(
+27 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::string&#32;name,
+28 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::string&#32;speciality,
+29 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::string&#32;title,
+30 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::string&#32;email,
+31 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::string&#32;password,
+32 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::string&#32;phone,
+33 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::string&#32;biography,
+34 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;age,
+35 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;QDateTime&#32;creation_date);
+36 
+37 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_class_admin_1afc5dc3eb945860d289e41f93b71039df">get_id</link>();
+38 &#32;&#32;&#32;&#32;std::string&#32;<link linkend="_class_admin_1ad4aa7e6c4ab3d5da800f05325ec22617">get_speciality</link>()&#32;<emphasis role="keyword">const</emphasis>;
+39 &#32;&#32;&#32;&#32;std::string&#32;<link linkend="_class_admin_1a95ed96086fd6979dbb88673e7c60be30">get_title</link>()&#32;<emphasis role="keyword">const</emphasis>;
+40 &#32;&#32;&#32;&#32;std::string&#32;<link linkend="_class_admin_1a3362cbc3fa27cc7b7e578fb1a08eb4d9">get_password</link>()&#32;<emphasis role="keyword">const</emphasis>;
+41 &#32;&#32;&#32;&#32;QDateTime&#32;<link linkend="_class_admin_1a423d379f0d9e0ee643aa4b67dae2f8b4">get_creation_date</link>();
+42 &#32;&#32;&#32;&#32;std::string&#32;<link linkend="_class_admin_1a2f854444c15c29cddc5fd1eadbb5f295">get_biography</link>()&#32;<emphasis role="keyword">const</emphasis>;
+43 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_class_admin_1a95ebed4324df3585a63c51e84a17e56b">get_dateOfbirth</link>()&#32;<emphasis role="keyword">const</emphasis>;
+44 
+45 
+46 };
+47 
+48 <emphasis role="preprocessor">#endif&#32;</emphasis><emphasis role="comment">//&#32;ADMIN_H</emphasis>
+</programlisting></section>

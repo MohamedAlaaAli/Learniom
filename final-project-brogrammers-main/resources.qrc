@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/">
+        <file>icons/angle-left-b.svg</file>
+        <file>icons/book-reader.svg</file>
+        <file>icons/checkbox_down_arrow.svg</file>
+        <file>icons/export.svg</file>
+        <file>icons/import.svg</file>
+        <file>icons/notebooks.svg</file>
+        <file>icons/user-circle 1.png</file>
+        <file>icons/user-md.svg</file>
+        <file>icons/user.svg</file>
+    </qresource>
+</RCC>

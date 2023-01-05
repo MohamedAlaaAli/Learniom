@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_student_8h_source" xml:lang="en-US">
+<title>student.h</title>
+<indexterm><primary>F:/CUFE/SBME 2022/First Term/Data Structure/Final Project/Mo3id REPO/final-project-brogrammers/models/student.h</primary></indexterm>
+<programlisting linenumbering="unnumbered">1 <emphasis role="preprocessor">#ifndef&#32;STUDENT_H</emphasis>
+2 <emphasis role="preprocessor">#define&#32;STUDENT_H</emphasis>
+3 
+4 <emphasis role="preprocessor">#include&#32;&lt;iostream&gt;</emphasis>
+5 <emphasis role="preprocessor">#include&#32;&lt;vector&gt;</emphasis>
+6 <emphasis role="preprocessor">#include&#32;&quot;user.h&quot;</emphasis>
+7 <emphasis role="preprocessor">#include&#32;&quot;map&quot;</emphasis>
+8 <emphasis role="keyword">class&#32;</emphasis><link linkend="_class_course">Course</link>;
+9 
+10 
+11 
+17 <emphasis role="keyword">class&#32;</emphasis><link linkend="_class_student">Student</link>&#32;:&#32;<emphasis role="keyword">public</emphasis>&#32;<link linkend="_class_user">User</link>&#32;{
+18 
+19 <emphasis role="keyword">private</emphasis>:
+20 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;ID;
+21 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;graduation_year;
+22 &#32;&#32;&#32;&#32;std::vector&lt;std::string&gt;&#32;courses;
+23 &#32;&#32;&#32;&#32;std::map&lt;std::string,&#32;float&gt;&#32;courses_grades;
+24 
+25 <emphasis role="keyword">public</emphasis>:
+26 &#32;&#32;&#32;&#32;<link linkend="_class_student">Student</link>(
+27 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::string&#32;name,
+28 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::string&#32;email,
+29 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::string&#32;phone,
+30 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::string&#32;department,
+31 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;age,
+32 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;graduation_year);
+33 
+34 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_class_student_1a002fb1616666065c7b30bacbbf752ead">get_id</link>();
+35 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_class_student_1a86f99967a2075361bacb151222314c99">getGraduation_year</link>()&#32;<emphasis role="keyword">const</emphasis>;
+36 &#32;&#32;&#32;&#32;std::vector&lt;std::string&gt;&#32;<link linkend="_class_student_1a944630b99a55b14ee8f9fd1cd05b160f">get_courses</link>();
+37 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_student_1ab68e20e4d8caf00dc7bb184addf4c559">set_courses</link>(std::string&#32;course);
+38 &#32;&#32;&#32;&#32;std::map&lt;std::string,&#32;float&gt;&#32;<link linkend="_class_student_1af4265f54c4b2f609d03d3addda30dabb">get_courses_grades</link>();
+39 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_student_1ac0a784ba5d1e2e338de97fc46c4929fc">set_courses_grades</link>(std::string&#32;course&#32;,&#32;<emphasis role="keywordtype">float</emphasis>&#32;grade);
+40 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_student_1a5ec4b2fb9d203c68dca007f7a0863d23">unenroll</link>(std::string);
+41 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_student_1ac08c909ae88d239c0f599929f83f912d">enroll</link>(std::string);
+42 
+43 
+44 };
+45 
+46 <emphasis role="preprocessor">#endif&#32;</emphasis><emphasis role="comment">//&#32;STUDENT_H</emphasis>
+</programlisting></section>

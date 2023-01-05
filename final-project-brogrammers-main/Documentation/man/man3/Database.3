@@ -1,0 +1,76 @@
+.TH "Database" 3 "Mon Jan 2 2023" "Brogrammers" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Database \- This Class has the used database (Professors, Students, Admins and Courses)  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <database\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBDatabase\fP ()"
+.br
+.RI "\fBDatabase\fP Class Components of the Application\&. "
+.ti -1c
+.RI "std::vector< \fBStudent\fP * > \fBget_students_mock_data\fP ()"
+.br
+.ti -1c
+.RI "std::vector< \fBProfessor\fP * > \fBget_professors_mock_data\fP ()"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "std::vector< \fBAdmin\fP * > \fBadmins\fP"
+.br
+.ti -1c
+.RI "std::vector< \fBStudent\fP * > \fBstudents\fP"
+.br
+.ti -1c
+.RI "std::vector< \fBProfessor\fP * > \fBprofessors\fP"
+.br
+.ti -1c
+.RI "std::vector< \fBCourse\fP * > \fBcourses\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+This Class has the used database (Professors, Students, Admins and Courses) 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Database::Database ()"
+
+.PP
+\fBDatabase\fP Class Components of the Application\&. This class helps in adding or deleting (admins, students, professors and courses) 
+.PP
+\fBAuthor\fP
+.RS 4
+Mohammed Alaa & Amir Hesham 
+.RE
+.PP
+\fBCopyright\fP
+.RS 4
+Brogrammers\&. 
+.RE
+.PP
+
+.IP "\(bu" 2
+Vector to manage adding or deleting admins
+.IP "\(bu" 2
+Vector to manage adding or deleting Students
+.IP "\(bu" 2
+Vector to manage adding or deleting Professors
+.IP "\(bu" 2
+Vector to manage adding or deleting Courses
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Brogrammers from the source code\&.

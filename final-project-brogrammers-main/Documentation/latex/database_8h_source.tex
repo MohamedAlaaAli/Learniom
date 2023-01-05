@@ -1,0 +1,47 @@
+\hypertarget{database_8h_source}{}\doxysection{database.\+h}
+\label{database_8h_source}\index{F:/CUFE/SBME 2022/First Term/Data Structure/Final Project/Mo3id REPO/final-\/project-\/brogrammers/models/database.h@{F:/CUFE/SBME 2022/First Term/Data Structure/Final Project/Mo3id REPO/final-\/project-\/brogrammers/models/database.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ DATABASE\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ DATABASE\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include"{}admin.h"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}student.h"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}professor.h"{}}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}course.h"{}}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_database}{Database}}\ \{}
+\DoxyCodeLine{00015\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00016\ \ \ \ \ std::vector<Admin*>\ admins;}
+\DoxyCodeLine{00017\ \ \ \ \ std::vector<Student*>\ students;}
+\DoxyCodeLine{00018\ \ \ \ \ std::vector<Professor*>\ professors;}
+\DoxyCodeLine{00019\ \ \ \ \ std::vector<Course*>\ courses;}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \ \ \ \ \mbox{\hyperlink{class_database_a4703c80e6969d33565ea340f768fdadf}{Database}}();}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{comment}{//\ For\ testing}}
+\DoxyCodeLine{00024\ \ \ \ \ std::vector<Student*>\ get\_students\_mock\_data()\ \{}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \{}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_student}{Student}}(\textcolor{stringliteral}{"{}Amir\ Hesham"{}},\ \textcolor{stringliteral}{"{}amirhesham65@gmail.com"{}},\ \textcolor{stringliteral}{"{}01013708540"{}},\ \textcolor{stringliteral}{"{}SBE"{}},\ 20,\ 2025),}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_student}{Student}}(\textcolor{stringliteral}{"{}Karim\ Hesham"{}},\ \textcolor{stringliteral}{"{}testthing@gmail.com"{}},\ \textcolor{stringliteral}{"{}01013708540"{}},\ \textcolor{stringliteral}{"{}CMP"{}},\ 20,\ 2025),}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_student}{Student}}(\textcolor{stringliteral}{"{}Mohamed\ Alaa"{}},\ \textcolor{stringliteral}{"{}moalaaaaaaa@gmail.com"{}},\ \textcolor{stringliteral}{"{}01013708540"{}},\ \textcolor{stringliteral}{"{}SBE"{}},\ 20,\ 2025),}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_student}{Student}}(\textcolor{stringliteral}{"{}John\ Doe"{}},\ \textcolor{stringliteral}{"{}amirhesham65@gmail.com"{}},\ \textcolor{stringliteral}{"{}01013708540"{}},\ \textcolor{stringliteral}{"{}SBE"{}},\ 20,\ 2025),}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_student}{Student}}(\textcolor{stringliteral}{"{}Jane\ Doe"{}},\ \textcolor{stringliteral}{"{}amirhesham65@gmail.com"{}},\ \textcolor{stringliteral}{"{}01013708540"{}},\ \textcolor{stringliteral}{"{}CMP"{}},\ 20,\ 2025)}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{00032\ \ \ \ \ \};}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \ \ \ \ std::vector<Professor*>\ get\_professors\_mock\_data()\ \{}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \{}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_professor}{Professor}}(\textcolor{stringliteral}{"{}Ahmed\ Hesham"{}},\ \textcolor{stringliteral}{"{}ahmedhesham5@gmail.com"{}},\ \textcolor{stringliteral}{"{}01013708540"{}},\ \textcolor{stringliteral}{"{}SBE"{}},\ \textcolor{stringliteral}{"{}Data\ Structures"{}},\ \textcolor{stringliteral}{"{}"{}},\ \textcolor{stringliteral}{"{}"{}},\ \textcolor{stringliteral}{"{}Cairo\ University"{}},\ 30,\ \textcolor{stringliteral}{"{}test"{}},\ \textcolor{stringliteral}{"{}03/30/2019"{}}),}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_professor}{Professor}}(\textcolor{stringliteral}{"{}Sherif\ Sami"{}},\ \textcolor{stringliteral}{"{}shsami@gmail.com"{}},\ \textcolor{stringliteral}{"{}01013708540"{}},\ \textcolor{stringliteral}{"{}SBE"{}},\ \textcolor{stringliteral}{"{}Measurements"{}},\ \textcolor{stringliteral}{"{}"{}},\ \textcolor{stringliteral}{"{}"{}},\ \textcolor{stringliteral}{"{}Cairo\ University"{}},\ 30,\ \textcolor{stringliteral}{"{}test"{}},\ \textcolor{stringliteral}{"{}03/30/2019"{}}),}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_professor}{Professor}}(\textcolor{stringliteral}{"{}Tamer\ Basha"{}},\ \textcolor{stringliteral}{"{}tamerbasha65@gmail.com"{}},\ \textcolor{stringliteral}{"{}01013708540"{}},\ \textcolor{stringliteral}{"{}SBE"{}},\ \textcolor{stringliteral}{"{}Digital\ Signals"{}},\ \textcolor{stringliteral}{"{}"{}},\ \textcolor{stringliteral}{"{}"{}},\ \textcolor{stringliteral}{"{}Cairo\ University"{}},\ 30,\ \textcolor{stringliteral}{"{}test"{}},\ \textcolor{stringliteral}{"{}03/30/2019"{}}),}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_professor}{Professor}}(\textcolor{stringliteral}{"{}Samah\ Tantawi"{}},\ \textcolor{stringliteral}{"{}samahtantawi@gmail.com"{}},\ \textcolor{stringliteral}{"{}01013708540"{}},\ \textcolor{stringliteral}{"{}SBE"{}},\ \textcolor{stringliteral}{"{}Maths"{}},\ \textcolor{stringliteral}{"{}"{}},\ \textcolor{stringliteral}{"{}"{}},\ \textcolor{stringliteral}{"{}Cairo\ University"{}},\ 30,\ \textcolor{stringliteral}{"{}test"{}},\ \textcolor{stringliteral}{"{}03/30/2019"{}}),}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{00041\ \ \ \ \ \};}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ \};}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00045\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ DATABASE\_H}}
+
+\end{DoxyCode}

@@ -1,0 +1,236 @@
+\hypertarget{class_professor}{}\doxysection{Professor Class Reference}
+\label{class_professor}\index{Professor@{Professor}}
+
+
+In this class, there are all features and relations between Professors and courses.  
+
+
+
+
+{\ttfamily \#include $<$professor.\+h$>$}
+
+Inheritance diagram for Professor\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_professor}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_professor_ae62d602a0943684cb99f69e8ff418f75}\label{class_professor_ae62d602a0943684cb99f69e8ff418f75}} 
+{\bfseries Professor} (std\+::string name, std\+::string email, std\+::string phone, std\+::string department, std\+::string phd, std\+::string honors, std\+::string additional, std\+::string graduated\+\_\+from, int age, std\+::string birth, std\+::string joined\+\_\+on)
+\item 
+int \mbox{\hyperlink{class_professor_a57658b4b45c76c490d3077975437f2db}{get\+\_\+id}} ()
+\begin{DoxyCompactList}\small\item\em Get the \mbox{\hyperlink{class_professor}{Professor}}\textquotesingle{}s ID. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_professor_a9a33b27fb6082ed5a36631fc85152b57}{get\+\_\+phd}} ()
+\begin{DoxyCompactList}\small\item\em Get the \mbox{\hyperlink{class_professor}{Professor}}\textquotesingle{}s PHD Name. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_professor_ab151f56fe1d6c58bbd1386a806d374e5}{get\+\_\+honors}} ()
+\begin{DoxyCompactList}\small\item\em Get the \mbox{\hyperlink{class_professor}{Professor}}\textquotesingle{}s Honors. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_professor_abff1b377bf8fcfdab848e40cc6026b99}\label{class_professor_abff1b377bf8fcfdab848e40cc6026b99}} 
+std\+::string {\bfseries get\+\_\+additional} ()
+\item 
+std\+::string \mbox{\hyperlink{class_professor_a61def81c25db5836d6f5a4e218bd4047}{get\+\_\+graduated\+\_\+from}} ()
+\begin{DoxyCompactList}\small\item\em Get the \mbox{\hyperlink{class_professor}{Professor}}\textquotesingle{}s Graduation University. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_professor_a3e578e6bec6536de6c045c0e71fbd8b1}{get\+\_\+joined\+\_\+on}} ()
+\begin{DoxyCompactList}\small\item\em Get the \mbox{\hyperlink{class_professor}{Professor}}\textquotesingle{}s Joining Date. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_professor_a04802dfdd75b16ef91f779092602e9b8}{get\+\_\+birth}} ()
+\begin{DoxyCompactList}\small\item\em Get the \mbox{\hyperlink{class_professor}{Professor}}\textquotesingle{}s Date of Birth. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{class_professor_a8197260e8a689fb6e958293a9e64a75f}{get\+\_\+courses}} ()
+\begin{DoxyCompactList}\small\item\em Get the \mbox{\hyperlink{class_professor}{Professor}}\textquotesingle{}s courses. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_professor_a081da51951df7e949e16ea9f1a4484ae}{set\+\_\+courses}} (std\+::string course)
+\begin{DoxyCompactList}\small\item\em Organize the \mbox{\hyperlink{class_professor}{Professor}}\textquotesingle{}s Courses. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_professor_a379e0e5738e4f4aff57bf33c17e276f4}{unenroll}} (std\+::string)
+\begin{DoxyCompactList}\small\item\em Remove the course from the \mbox{\hyperlink{class_professor}{Professor}} profile. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_user}{User}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_user_ae4fb7fdfda804e2c1e8ead2780a77f3c}{User}} (std\+::string name, std\+::string email, std\+::string phone, std\+::string department, int age)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_user}{User}} Class Features. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_user_a90d4d69ce714062ed416e498ed687614}\label{class_user_a90d4d69ce714062ed416e498ed687614}} 
+{\bfseries User} (std\+::string name, std\+::string email, std\+::string phone, int age)
+\item 
+std\+::string \mbox{\hyperlink{class_user_a446a64e63adafbc2e1428532275ad6a1}{get\+Name}} () const
+\begin{DoxyCompactList}\small\item\em Get the \mbox{\hyperlink{class_user}{User}}\textquotesingle{}s Name. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_user_a68c520e78268ba63c97ff04b6fb210a1}{get\+Email}} () const
+\begin{DoxyCompactList}\small\item\em Get the \mbox{\hyperlink{class_user}{User}}\textquotesingle{}s Email. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_user_aa6b3271fff710eee0b406cc270fe7071}{get\+Phone}} () const
+\begin{DoxyCompactList}\small\item\em Get the \mbox{\hyperlink{class_user}{User}}\textquotesingle{}s Phone. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_user_a2da830cf1d7f4f70fb1cdb1cf179a464}{get\+Department}} () const
+\begin{DoxyCompactList}\small\item\em Get the \mbox{\hyperlink{class_user}{User}}\textquotesingle{}s Department. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_user_a71385d4c5a3a509af5024b3c8e1e1aa9}{get\+Age}} () const
+\begin{DoxyCompactList}\small\item\em Get the \mbox{\hyperlink{class_user}{User}}\textquotesingle{}s Age. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+In this class, there are all features and relations between Professors and courses. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_professor_a04802dfdd75b16ef91f779092602e9b8}\label{class_professor_a04802dfdd75b16ef91f779092602e9b8}} 
+\index{Professor@{Professor}!get\_birth@{get\_birth}}
+\index{get\_birth@{get\_birth}!Professor@{Professor}}
+\doxysubsubsection{\texorpdfstring{get\_birth()}{get\_birth()}}
+{\footnotesize\ttfamily std\+::string Professor\+::get\+\_\+birth (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the \mbox{\hyperlink{class_professor}{Professor}}\textquotesingle{}s Date of Birth. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em NULL} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_professor}{Professor}}\textquotesingle{}s Date of Birth 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_professor_a8197260e8a689fb6e958293a9e64a75f}\label{class_professor_a8197260e8a689fb6e958293a9e64a75f}} 
+\index{Professor@{Professor}!get\_courses@{get\_courses}}
+\index{get\_courses@{get\_courses}!Professor@{Professor}}
+\doxysubsubsection{\texorpdfstring{get\_courses()}{get\_courses()}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::string $>$ Professor\+::get\+\_\+courses (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the \mbox{\hyperlink{class_professor}{Professor}}\textquotesingle{}s courses. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em NULL} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_professor}{Professor}}\textquotesingle{}s courses 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_professor_a61def81c25db5836d6f5a4e218bd4047}\label{class_professor_a61def81c25db5836d6f5a4e218bd4047}} 
+\index{Professor@{Professor}!get\_graduated\_from@{get\_graduated\_from}}
+\index{get\_graduated\_from@{get\_graduated\_from}!Professor@{Professor}}
+\doxysubsubsection{\texorpdfstring{get\_graduated\_from()}{get\_graduated\_from()}}
+{\footnotesize\ttfamily std\+::string Professor\+::get\+\_\+graduated\+\_\+from (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the \mbox{\hyperlink{class_professor}{Professor}}\textquotesingle{}s Graduation University. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em NULL} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_professor}{Professor}}\textquotesingle{}s Graduation University 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_professor_ab151f56fe1d6c58bbd1386a806d374e5}\label{class_professor_ab151f56fe1d6c58bbd1386a806d374e5}} 
+\index{Professor@{Professor}!get\_honors@{get\_honors}}
+\index{get\_honors@{get\_honors}!Professor@{Professor}}
+\doxysubsubsection{\texorpdfstring{get\_honors()}{get\_honors()}}
+{\footnotesize\ttfamily std\+::string Professor\+::get\+\_\+honors (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the \mbox{\hyperlink{class_professor}{Professor}}\textquotesingle{}s Honors. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em NULL} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_professor}{Professor}}\textquotesingle{}s Honors 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_professor_a57658b4b45c76c490d3077975437f2db}\label{class_professor_a57658b4b45c76c490d3077975437f2db}} 
+\index{Professor@{Professor}!get\_id@{get\_id}}
+\index{get\_id@{get\_id}!Professor@{Professor}}
+\doxysubsubsection{\texorpdfstring{get\_id()}{get\_id()}}
+{\footnotesize\ttfamily int Professor\+::get\+\_\+id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the \mbox{\hyperlink{class_professor}{Professor}}\textquotesingle{}s ID. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em NULL} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_professor}{Professor}}\textquotesingle{}s ID 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_professor_a3e578e6bec6536de6c045c0e71fbd8b1}\label{class_professor_a3e578e6bec6536de6c045c0e71fbd8b1}} 
+\index{Professor@{Professor}!get\_joined\_on@{get\_joined\_on}}
+\index{get\_joined\_on@{get\_joined\_on}!Professor@{Professor}}
+\doxysubsubsection{\texorpdfstring{get\_joined\_on()}{get\_joined\_on()}}
+{\footnotesize\ttfamily std\+::string Professor\+::get\+\_\+joined\+\_\+on (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the \mbox{\hyperlink{class_professor}{Professor}}\textquotesingle{}s Joining Date. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em NULL} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_professor}{Professor}}\textquotesingle{}s Joining Date 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_professor_a9a33b27fb6082ed5a36631fc85152b57}\label{class_professor_a9a33b27fb6082ed5a36631fc85152b57}} 
+\index{Professor@{Professor}!get\_phd@{get\_phd}}
+\index{get\_phd@{get\_phd}!Professor@{Professor}}
+\doxysubsubsection{\texorpdfstring{get\_phd()}{get\_phd()}}
+{\footnotesize\ttfamily std\+::string Professor\+::get\+\_\+phd (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the \mbox{\hyperlink{class_professor}{Professor}}\textquotesingle{}s PHD Name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em NULL} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_professor}{Professor}}\textquotesingle{}s PHD Name 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_professor_a081da51951df7e949e16ea9f1a4484ae}\label{class_professor_a081da51951df7e949e16ea9f1a4484ae}} 
+\index{Professor@{Professor}!set\_courses@{set\_courses}}
+\index{set\_courses@{set\_courses}!Professor@{Professor}}
+\doxysubsubsection{\texorpdfstring{set\_courses()}{set\_courses()}}
+{\footnotesize\ttfamily void Professor\+::set\+\_\+courses (\begin{DoxyParamCaption}\item[{std\+::string}]{course }\end{DoxyParamCaption})}
+
+
+
+Organize the \mbox{\hyperlink{class_professor}{Professor}}\textquotesingle{}s Courses. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{class_course}{Course}}} & To add Courses that each professor is the lecturer of it \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing to be returned 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_professor_a379e0e5738e4f4aff57bf33c17e276f4}\label{class_professor_a379e0e5738e4f4aff57bf33c17e276f4}} 
+\index{Professor@{Professor}!unenroll@{unenroll}}
+\index{unenroll@{unenroll}!Professor@{Professor}}
+\doxysubsubsection{\texorpdfstring{unenroll()}{unenroll()}}
+{\footnotesize\ttfamily void Professor\+::unenroll (\begin{DoxyParamCaption}\item[{std\+::string}]{course }\end{DoxyParamCaption})}
+
+
+
+Remove the course from the \mbox{\hyperlink{class_professor}{Professor}} profile. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Course\+\_\+\+Name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing to be returned 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+F\+:/\+CUFE/\+SBME 2022/\+First Term/\+Data Structure/\+Final Project/\+Mo3id REPO/final-\/project-\/brogrammers/models/professor.\+h\item 
+F\+:/\+CUFE/\+SBME 2022/\+First Term/\+Data Structure/\+Final Project/\+Mo3id REPO/final-\/project-\/brogrammers/models/professor.\+cpp\end{DoxyCompactItemize}

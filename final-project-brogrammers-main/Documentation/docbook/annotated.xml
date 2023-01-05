@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_annotated" xml:lang="en-US">
+<title>Class List</title>
+Here are the classes, structs, unions and interfaces with brief descriptions:<link linkend="_class_admin">Admin</link>
+<para>In this class, there are all features and relations between Admins and the other classes </para>
+<link linkend="_class_course">Course</link>
+<para>In this class, there are all features and relations between Courses and All members in the learning Process </para>
+<link linkend="_class_database">Database</link>
+<para>This Class has the used database (Professors, Students, Admins and Courses) </para>
+<link linkend="_class_dialog">Dialog</link>
+<para>In this class, there are all processes that will be run in case of error occur </para>
+<link linkend="_class_main_window">MainWindow</link>
+<para>In this class, there are all processes and actions all over the program </para>
+<link linkend="_class_professor">Professor</link>
+<para>In this class, there are all features and relations between Professors and courses </para>
+<link linkend="_class_student">Student</link>
+<para>In this class, there are all features and relations between student and courses </para>
+<link linkend="_class_user">User</link>
+<para>In this class, there are all features and relations between Admins, Students and Professors </para>
+</section>

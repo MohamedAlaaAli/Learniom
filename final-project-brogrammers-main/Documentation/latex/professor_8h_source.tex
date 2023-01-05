@@ -1,0 +1,56 @@
+\hypertarget{professor_8h_source}{}\doxysection{professor.\+h}
+\label{professor_8h_source}\index{F:/CUFE/SBME 2022/First Term/Data Structure/Final Project/Mo3id REPO/final-\/project-\/brogrammers/models/professor.h@{F:/CUFE/SBME 2022/First Term/Data Structure/Final Project/Mo3id REPO/final-\/project-\/brogrammers/models/professor.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ PROFESSOR\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ PROFESSOR\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}QDateTime"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}user.h"{}}}
+\DoxyCodeLine{00008\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_course}{Course}};}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_professor}{Professor}}:\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_user}{User}}}
+\DoxyCodeLine{00018\ \{}
+\DoxyCodeLine{00019\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{int}\ ID;}
+\DoxyCodeLine{00021\ \ \ \ \ std::string\ phd;}
+\DoxyCodeLine{00022\ \ \ \ \ std::string\ honors;}
+\DoxyCodeLine{00023\ \ \ \ \ std::string\ additional;}
+\DoxyCodeLine{00024\ \ \ \ \ std::string\ graduated\_from;}
+\DoxyCodeLine{00025\ \ \ \ \ std::string\ joined\_on;}
+\DoxyCodeLine{00026\ \ \ \ \ std::string\ birth;}
+\DoxyCodeLine{00027\ \ \ \ \ std::vector<std::string>\ courses;}
+\DoxyCodeLine{00028\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \ \ \ \mbox{\hyperlink{class_professor}{Professor}}(}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ std::string\ name,}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ std::string\ email,}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ std::string\ phone,}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ std::string\ department,}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ std::string\ phd,}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ std::string\ honors,}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ std::string\ additional,}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ std::string\ graduated\_from,}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ age,}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ std::string\ birth,}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ std::string\ joined\_on);}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_professor_a57658b4b45c76c490d3077975437f2db}{get\_id}}();}
+\DoxyCodeLine{00045\ \ \ \ std::string\ \mbox{\hyperlink{class_professor_a9a33b27fb6082ed5a36631fc85152b57}{get\_phd}}();}
+\DoxyCodeLine{00046\ \ \ \ std::string\ \mbox{\hyperlink{class_professor_ab151f56fe1d6c58bbd1386a806d374e5}{get\_honors}}();}
+\DoxyCodeLine{00047\ \ \ \ std::string\ get\_additional();}
+\DoxyCodeLine{00048\ \ \ \ std::string\ \mbox{\hyperlink{class_professor_a61def81c25db5836d6f5a4e218bd4047}{get\_graduated\_from}}();}
+\DoxyCodeLine{00049\ \ \ \ std::string\ \mbox{\hyperlink{class_professor_a3e578e6bec6536de6c045c0e71fbd8b1}{get\_joined\_on}}();}
+\DoxyCodeLine{00050\ \ \ \ std::string\ \mbox{\hyperlink{class_professor_a04802dfdd75b16ef91f779092602e9b8}{get\_birth}}();}
+\DoxyCodeLine{00051\ \ \ \ std::vector<std::string>\ \mbox{\hyperlink{class_professor_a8197260e8a689fb6e958293a9e64a75f}{get\_courses}}();}
+\DoxyCodeLine{00052\ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_professor_a081da51951df7e949e16ea9f1a4484ae}{set\_courses}}(std::string\ course);}
+\DoxyCodeLine{00053\ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_professor_a379e0e5738e4f4aff57bf33c17e276f4}{unenroll}}(std::string);}
+\DoxyCodeLine{00054\ \};}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00056\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ PROFESSOR\_H}}
+
+\end{DoxyCode}

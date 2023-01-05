@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<book xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_index" xml:lang="en-US">
+    <info>
+    <title>Brogrammers</title>
+    </info>
+<chapter>
+    <title>Our Program Documentation</title>
+    <xi:include href="mainpage.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</chapter>
+<chapter>
+    <title>Class Documentation</title>
+    <xi:include href="class_admin.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_course.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_database.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_dialog.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_main_window.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_professor.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_student.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_user.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</chapter>
+<chapter>
+    <title>File Documentation</title>
+    <xi:include href="dialog_8h_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="mainwindow_8h_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="admin_8h_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="course_8h_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="database_8h_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="professor_8h_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="student_8h_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="user_8h_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</chapter>
+<index/>
+</book>

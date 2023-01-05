@@ -1,0 +1,105 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<chapter xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_mainpage" xml:lang="en-US">
+<section xml:id="_index_1autotoc_md0">
+<title>Learning management system that helps an Admin to manage university learning Process</title>
+<section xml:id="_index_1autotoc_md1">
+<title>Abstract about our Program:-</title>
+
+<para><itemizedlist>
+<listitem>
+<para>Our Application make each professor manage the learning process</para>
+</listitem><listitem>
+<para>Each <link linkend="_class_student">Student</link> will be able to know his/her courses and grades</para>
+</listitem><listitem>
+<para>Only the admin that can edit anything, either add or delete students and professors from the courses</para>
+</listitem></itemizedlist>
+</para>
+
+<para><informaltable frame='bottom'><tgroup cols='1'><colspec align='center'/><tbody><row><entry align='center'>
+</entry></row></tbody></tgroup></informaltable>
+ <informaltable frame='bottom'><tgroup cols='1'><colspec align='center'/><tbody><row><entry align='center'>
+</entry></row></tbody></tgroup></informaltable>
+</para>
+</section>
+<section xml:id="_index_1autotoc_md2">
+<title>Description:-</title>
+
+<para><itemizedlist>
+<listitem>
+<para>Delete: <link linkend="_class_student">Student</link>, <link linkend="_class_professor">Professor</link>, courses and other admins as well</para>
+</listitem><listitem>
+<para>Add: <link linkend="_class_student">Student</link>, <link linkend="_class_professor">Professor</link>, courses and other admins as well</para>
+</listitem><listitem>
+<para>Search: Through all <link linkend="_class_student">Student</link>, <link linkend="_class_professor">Professor</link>, courses</para>
+</listitem><listitem>
+<para>Filter: Displayed data in <link linkend="_class_student">Student</link>, <link linkend="_class_professor">Professor</link>, courses</para>
+</listitem></itemizedlist>
+</para>
+
+<para><informaltable frame='bottom'><tgroup cols='1'><colspec align='center'/><tbody><row><entry align='center'>
+</entry></row></tbody></tgroup></informaltable>
+ <informaltable frame='bottom'><tgroup cols='1'><colspec align='center'/><tbody><row><entry align='center'>
+</entry></row></tbody></tgroup></informaltable>
+</para>
+</section>
+<section xml:id="_index_1autotoc_md3">
+<title>Designing Stage:-</title>
+
+<para><emphasis role="bold">before start coding our programm we design different UML DIAGRAMS to help visualizing work flow of the program and the neccessary classes, so we have implemented:</emphasis><orderedlist>
+<listitem>
+<para>Use Case Diagram</para>
+</listitem><listitem>
+<para>Sequence Diagram</para>
+</listitem><listitem>
+<para>Class Diagram</para>
+</listitem><listitem>
+<para>Activity Diagram here on of UMls diagram, Sequence Diagram that shows flow of the program</para>
+</listitem></orderedlist>
+</para>
+
+<para><informaltable frame='bottom'><tgroup cols='1'><colspec align='center'/><tbody><row><entry align='center'>
+</entry></row></tbody></tgroup></informaltable>
+ <informaltable frame='bottom'><tgroup cols='1'><colspec align='center'/><tbody><row><entry align='center'>
+</entry></row></tbody></tgroup></informaltable>
+</para>
+</section>
+<section xml:id="_index_1autotoc_md4">
+<title>Frameworks:-</title>
+
+<para><itemizedlist>
+<listitem>
+<para>We implemented this project using <emphasis role="bold">QT framework</emphasis></para>
+</listitem><listitem>
+<para>Our Design is Responsive</para>
+</listitem><listitem>
+<para>Our Project is a stack-widget not individual forms</para>
+</listitem><listitem>
+<para>There is only individual form (Dialouge) that will be appeared in case of errors</para>
+</listitem></itemizedlist>
+</para>
+
+<para><informaltable frame='bottom'><tgroup cols='1'><colspec align='center'/><tbody><row><entry align='center'>
+</entry></row></tbody></tgroup></informaltable>
+ <informaltable frame='bottom'><tgroup cols='1'><colspec align='center'/><tbody><row><entry align='center'>
+</entry></row></tbody></tgroup></informaltable>
+</para>
+</section>
+<section xml:id="_index_1autotoc_md5">
+<title>Credits:-</title>
+
+<para><orderedlist>
+<listitem>
+<para><emphasis role="bold">Amir Hesham (Team Leader):</emphasis> Design a responive UI to make the program reliable and has the ability to work on different devices.</para>
+</listitem><listitem>
+<para><emphasis role="bold">Omar Mohamed &amp; Hesham Tamer</emphasis>: Design UML diagrams to make coding stage piece of cake, code functions that check if enterd mail and password match any mail and passowrd of any existing admin.</para>
+</listitem><listitem>
+<para><emphasis role="bold">Omar Mohamed &amp; Mohamed Alaa</emphasis> code student class, improving its functionality of add, remove, search for student.</para>
+</listitem><listitem>
+<para><emphasis role="bold">Muhannad Abdallah</emphasis>: Code admin class to make any admin able to add or remove other admins as well as Coding courses class, improving its functionality of add, remove, search for courses.</para>
+</listitem><listitem>
+<para><emphasis role="bold">Fady Mohsen</emphasis>: Code professor class, improving its functionality of add, remove, search for pofessor as well as writing and publishing the code documentation (doxygen). </para>
+</listitem></orderedlist>
+</para>
+</section>
+</section>
+</chapter>

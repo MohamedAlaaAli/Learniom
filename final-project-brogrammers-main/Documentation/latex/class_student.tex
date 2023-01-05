@@ -1,0 +1,233 @@
+\hypertarget{class_student}{}\doxysection{Student Class Reference}
+\label{class_student}\index{Student@{Student}}
+
+
+In this class, there are all features and relations between student and courses.  
+
+
+
+
+{\ttfamily \#include $<$student.\+h$>$}
+
+Inheritance diagram for Student\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_student}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_student_abd15e493097f601f7370a1b3aef89308}{Student}} (std\+::string name, std\+::string email, std\+::string phone, std\+::string department, int age, int graduation\+\_\+year)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_student}{Student}} Class Features. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_student_a002fb1616666065c7b30bacbbf752ead}{get\+\_\+id}} ()
+\begin{DoxyCompactList}\small\item\em Get the \mbox{\hyperlink{class_student}{Student}}\textquotesingle{}s ID. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_student_a86f99967a2075361bacb151222314c99}{get\+Graduation\+\_\+year}} () const
+\begin{DoxyCompactList}\small\item\em Get the \mbox{\hyperlink{class_student}{Student}}\textquotesingle{}s Graduation Year. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{class_student_a944630b99a55b14ee8f9fd1cd05b160f}{get\+\_\+courses}} ()
+\begin{DoxyCompactList}\small\item\em Get the \mbox{\hyperlink{class_student}{Student}}\textquotesingle{}s Courses. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_student_ab68e20e4d8caf00dc7bb184addf4c559}{set\+\_\+courses}} (std\+::string course)
+\begin{DoxyCompactList}\small\item\em Add a new \mbox{\hyperlink{class_course}{Course}} to the student profile. \end{DoxyCompactList}\item 
+std\+::map$<$ std\+::string, float $>$ \mbox{\hyperlink{class_student_af4265f54c4b2f609d03d3addda30dabb}{get\+\_\+courses\+\_\+grades}} ()
+\begin{DoxyCompactList}\small\item\em Show the student\textquotesingle{}s Grades. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_student_ac0a784ba5d1e2e338de97fc46c4929fc}{set\+\_\+courses\+\_\+grades}} (std\+::string course, float grade)
+\begin{DoxyCompactList}\small\item\em Organizing the courses with its crospoinding grade. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_student_a5ec4b2fb9d203c68dca007f7a0863d23}{unenroll}} (std\+::string)
+\begin{DoxyCompactList}\small\item\em Remove the course from the student profile. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_student_ac08c909ae88d239c0f599929f83f912d}{enroll}} (std\+::string)
+\begin{DoxyCompactList}\small\item\em Adding the course to the student profile. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_user}{User}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_user_ae4fb7fdfda804e2c1e8ead2780a77f3c}{User}} (std\+::string name, std\+::string email, std\+::string phone, std\+::string department, int age)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_user}{User}} Class Features. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_user_a90d4d69ce714062ed416e498ed687614}\label{class_user_a90d4d69ce714062ed416e498ed687614}} 
+{\bfseries User} (std\+::string name, std\+::string email, std\+::string phone, int age)
+\item 
+std\+::string \mbox{\hyperlink{class_user_a446a64e63adafbc2e1428532275ad6a1}{get\+Name}} () const
+\begin{DoxyCompactList}\small\item\em Get the \mbox{\hyperlink{class_user}{User}}\textquotesingle{}s Name. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_user_a68c520e78268ba63c97ff04b6fb210a1}{get\+Email}} () const
+\begin{DoxyCompactList}\small\item\em Get the \mbox{\hyperlink{class_user}{User}}\textquotesingle{}s Email. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_user_aa6b3271fff710eee0b406cc270fe7071}{get\+Phone}} () const
+\begin{DoxyCompactList}\small\item\em Get the \mbox{\hyperlink{class_user}{User}}\textquotesingle{}s Phone. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_user_a2da830cf1d7f4f70fb1cdb1cf179a464}{get\+Department}} () const
+\begin{DoxyCompactList}\small\item\em Get the \mbox{\hyperlink{class_user}{User}}\textquotesingle{}s Department. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_user_a71385d4c5a3a509af5024b3c8e1e1aa9}{get\+Age}} () const
+\begin{DoxyCompactList}\small\item\em Get the \mbox{\hyperlink{class_user}{User}}\textquotesingle{}s Age. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+In this class, there are all features and relations between student and courses. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_student_abd15e493097f601f7370a1b3aef89308}\label{class_student_abd15e493097f601f7370a1b3aef89308}} 
+\index{Student@{Student}!Student@{Student}}
+\index{Student@{Student}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{Student()}{Student()}}
+{\footnotesize\ttfamily Student\+::\+Student (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{std\+::string}]{email,  }\item[{std\+::string}]{phone,  }\item[{std\+::string}]{department,  }\item[{int}]{age,  }\item[{int}]{graduation\+\_\+year }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_student}{Student}} Class Features. 
+
+This class is used to link the data of Students to the database. \begin{DoxyAuthor}{Author}
+Amir Hesham \& Mohammed Alaa 
+\end{DoxyAuthor}
+\begin{DoxyCopyright}{Copyright}
+Brogrammers. 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_student_ac08c909ae88d239c0f599929f83f912d}\label{class_student_ac08c909ae88d239c0f599929f83f912d}} 
+\index{Student@{Student}!enroll@{enroll}}
+\index{enroll@{enroll}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{enroll()}{enroll()}}
+{\footnotesize\ttfamily void Student\+::enroll (\begin{DoxyParamCaption}\item[{std\+::string}]{course\+Name }\end{DoxyParamCaption})}
+
+
+
+Adding the course to the student profile. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Course\+\_\+\+Name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing to be returned 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_student_a944630b99a55b14ee8f9fd1cd05b160f}\label{class_student_a944630b99a55b14ee8f9fd1cd05b160f}} 
+\index{Student@{Student}!get\_courses@{get\_courses}}
+\index{get\_courses@{get\_courses}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{get\_courses()}{get\_courses()}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::string $>$ Student\+::get\+\_\+courses (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the \mbox{\hyperlink{class_student}{Student}}\textquotesingle{}s Courses. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em NULL} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_student}{Student}}\textquotesingle{}s Courses (the courses which the student enrolled in) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_student_af4265f54c4b2f609d03d3addda30dabb}\label{class_student_af4265f54c4b2f609d03d3addda30dabb}} 
+\index{Student@{Student}!get\_courses\_grades@{get\_courses\_grades}}
+\index{get\_courses\_grades@{get\_courses\_grades}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{get\_courses\_grades()}{get\_courses\_grades()}}
+{\footnotesize\ttfamily std\+::map$<$ std\+::string, float $>$ Student\+::get\+\_\+courses\+\_\+grades (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Show the student\textquotesingle{}s Grades. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em NULL} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+All the student\textquotesingle{}s grades 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_student_a002fb1616666065c7b30bacbbf752ead}\label{class_student_a002fb1616666065c7b30bacbbf752ead}} 
+\index{Student@{Student}!get\_id@{get\_id}}
+\index{get\_id@{get\_id}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{get\_id()}{get\_id()}}
+{\footnotesize\ttfamily int Student\+::get\+\_\+id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the \mbox{\hyperlink{class_student}{Student}}\textquotesingle{}s ID. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em NULL} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_student}{Student}}\textquotesingle{}s ID 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_student_a86f99967a2075361bacb151222314c99}\label{class_student_a86f99967a2075361bacb151222314c99}} 
+\index{Student@{Student}!getGraduation\_year@{getGraduation\_year}}
+\index{getGraduation\_year@{getGraduation\_year}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{getGraduation\_year()}{getGraduation\_year()}}
+{\footnotesize\ttfamily int Student\+::get\+Graduation\+\_\+year (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the \mbox{\hyperlink{class_student}{Student}}\textquotesingle{}s Graduation Year. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em NULL} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_student}{Student}}\textquotesingle{}s Graduation Year 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_student_ab68e20e4d8caf00dc7bb184addf4c559}\label{class_student_ab68e20e4d8caf00dc7bb184addf4c559}} 
+\index{Student@{Student}!set\_courses@{set\_courses}}
+\index{set\_courses@{set\_courses}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{set\_courses()}{set\_courses()}}
+{\footnotesize\ttfamily void Student\+::set\+\_\+courses (\begin{DoxyParamCaption}\item[{std\+::string}]{course }\end{DoxyParamCaption})}
+
+
+
+Add a new \mbox{\hyperlink{class_course}{Course}} to the student profile. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em course} & that will be taken by student in this semester \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_student}{Student}}\textquotesingle{}s courses Vector 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_student_ac0a784ba5d1e2e338de97fc46c4929fc}\label{class_student_ac0a784ba5d1e2e338de97fc46c4929fc}} 
+\index{Student@{Student}!set\_courses\_grades@{set\_courses\_grades}}
+\index{set\_courses\_grades@{set\_courses\_grades}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{set\_courses\_grades()}{set\_courses\_grades()}}
+{\footnotesize\ttfamily void Student\+::set\+\_\+courses\+\_\+grades (\begin{DoxyParamCaption}\item[{std\+::string}]{course,  }\item[{float}]{grade }\end{DoxyParamCaption})}
+
+
+
+Organizing the courses with its crospoinding grade. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em course} & to be linked with a particular grade \\
+\hline
+{\em grade} & to be added with a particular course \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_student}{Student}}\textquotesingle{}s course with its grade of the student 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_student_a5ec4b2fb9d203c68dca007f7a0863d23}\label{class_student_a5ec4b2fb9d203c68dca007f7a0863d23}} 
+\index{Student@{Student}!unenroll@{unenroll}}
+\index{unenroll@{unenroll}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{unenroll()}{unenroll()}}
+{\footnotesize\ttfamily void Student\+::unenroll (\begin{DoxyParamCaption}\item[{std\+::string}]{course\+Name }\end{DoxyParamCaption})}
+
+
+
+Remove the course from the student profile. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Course\+\_\+\+Name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing to be returned 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+F\+:/\+CUFE/\+SBME 2022/\+First Term/\+Data Structure/\+Final Project/\+Mo3id REPO/final-\/project-\/brogrammers/models/student.\+h\item 
+F\+:/\+CUFE/\+SBME 2022/\+First Term/\+Data Structure/\+Final Project/\+Mo3id REPO/final-\/project-\/brogrammers/models/student.\+cpp\end{DoxyCompactItemize}

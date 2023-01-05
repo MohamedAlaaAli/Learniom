@@ -1,0 +1,415 @@
+\hypertarget{class_course}{}\doxysection{Course Class Reference}
+\label{class_course}\index{Course@{Course}}
+
+
+In this class, there are all features and relations between Courses and All members in the learning Process.  
+
+
+
+
+{\ttfamily \#include $<$course.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_course_a9f5f4948c145f91db6a099c74b5fe98a}{Course}} (int ID, std\+::string name, std\+::string department, std\+::string type, std\+::string hall, std\+::string day, QTime start\+\_\+time, QTime end\+\_\+time, int academic\+\_\+year, int count\+\_\+student)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_course}{Course}} Class Features. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_course_a6c414036099f135f59025d4c7d5d7de5}{get\+\_\+name}} () const
+\begin{DoxyCompactList}\small\item\em Get the \mbox{\hyperlink{class_course}{Course}}\textquotesingle{}s Name. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_course_a8c5dd2993dca5838064abf68de9577e8}{get\+\_\+code}} () const
+\begin{DoxyCompactList}\small\item\em Get the course\textquotesingle{}s Code. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_course_ab4d233f6046dc32ad7bf8d8d397c3c0f}{get\+\_\+department}} () const
+\begin{DoxyCompactList}\small\item\em Get the course\textquotesingle{}s Department. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_course_a71221757e53e88167a77969852cee804}{get\+\_\+type}} () const
+\begin{DoxyCompactList}\small\item\em Get the course\textquotesingle{}s Type. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_course_a9142cfe2e4f5ac4f5f68781e47e3ae2b}{get\+\_\+hall}} () const
+\begin{DoxyCompactList}\small\item\em Get the course\textquotesingle{}s Hall (Lecture Place) \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_course_ae2053665f4fbb4202ce5a90466d9da48}{get\+\_\+day}} () const
+\begin{DoxyCompactList}\small\item\em Get the \mbox{\hyperlink{class_course}{Course}}\textquotesingle{}s Day. \end{DoxyCompactList}\item 
+QTime \mbox{\hyperlink{class_course_ae073670680fdb495f440863b34b8830c}{get\+\_\+start\+\_\+time}} () const
+\begin{DoxyCompactList}\small\item\em Get the course\textquotesingle{}s Start Time in the Semester. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_course_a8cbd97adb7c984aff426a6a938c26f7b}{get\+\_\+academic\+\_\+year}} () const
+\begin{DoxyCompactList}\small\item\em Get the course\textquotesingle{}s Academic Year. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_course_aacd3fb47f191a8e3ff7e46b62156b744}{get\+\_\+\+ID}} () const
+\begin{DoxyCompactList}\small\item\em Get the course\textquotesingle{}s ID. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_course_ab7e460f83d98d4a4fa76d66c5f77094f}{get\+\_\+num\+\_\+std}} () const
+\begin{DoxyCompactList}\small\item\em Counting the student numbers in the course. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_course_ab86562a6bff7f93902c35654b5c20806}{dismiss\+\_\+course}} ()
+\begin{DoxyCompactList}\small\item\em Unenroll the \mbox{\hyperlink{class_student}{Student}} from a certain course. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_course_a90f4a66f9a4721c6ce74aec80584584c}{add\+\_\+student}} (\mbox{\hyperlink{class_student}{Student}} $\ast$)
+\begin{DoxyCompactList}\small\item\em add\+\_\+student Add a given student into the students vector in the course \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_course_a2e5cb8ed4aba59634e01471f05ffb8f0}{delete\+\_\+student}} (\mbox{\hyperlink{class_student}{Student}} $\ast$)
+\begin{DoxyCompactList}\small\item\em delete\+\_\+student Remove a given student from the students vector in the course \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_student}{Student}} $\ast$ \mbox{\hyperlink{class_course_a4cc8b59fe4784a36b307dfd5bce15fa9}{find\+\_\+student\+\_\+by\+\_\+name}} (std\+::string)
+\begin{DoxyCompactList}\small\item\em find\+\_\+student\+\_\+by\+\_\+name Search for a student with a given name in the students vector in the course \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_course_a9f927402c7df3a2606160f2f233ff6ff}{edit\+\_\+student\+\_\+grade}} (\mbox{\hyperlink{class_student}{Student}} $\ast$, float)
+\begin{DoxyCompactList}\small\item\em Edit the Grade of a student. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_course_a7dce85c53692b5f03e43449649494364}{add\+\_\+professor}} (\mbox{\hyperlink{class_professor}{Professor}} $\ast$)
+\begin{DoxyCompactList}\small\item\em Adding New Professors in the \mbox{\hyperlink{class_professor}{Professor}}\textquotesingle{}s Vector. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_course_af8d6736d7d9390807773cfd001cb2c65}{delete\+\_\+professor}} (\mbox{\hyperlink{class_professor}{Professor}} $\ast$)
+\begin{DoxyCompactList}\small\item\em Deleting a Professsor From the Prfessor\textquotesingle{}s Vector. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_professor}{Professor}} $\ast$ \mbox{\hyperlink{class_course_a0b4cc0e46f46dde155fe5f120036e7ab}{find\+\_\+professor\+\_\+by\+\_\+name}} (std\+::string)
+\begin{DoxyCompactList}\small\item\em Search for the \mbox{\hyperlink{class_professor}{Professor}} by his/her name. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_course_a8a300fc8a42cf55a12e709f646360f2c}\label{class_course_a8a300fc8a42cf55a12e709f646360f2c}} 
+void {\bfseries set\+\_\+students} (\mbox{\hyperlink{class_student}{Student}} $\ast$student)
+\item 
+\mbox{\Hypertarget{class_course_aed5e1305788c1aa27fcb750537bc94a6}\label{class_course_aed5e1305788c1aa27fcb750537bc94a6}} 
+void {\bfseries set\+\_\+students\+\_\+to\+\_\+grades} (\mbox{\hyperlink{class_student}{Student}} $\ast$student, float grade)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+In this class, there are all features and relations between Courses and All members in the learning Process. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_course_a9f5f4948c145f91db6a099c74b5fe98a}\label{class_course_a9f5f4948c145f91db6a099c74b5fe98a}} 
+\index{Course@{Course}!Course@{Course}}
+\index{Course@{Course}!Course@{Course}}
+\doxysubsubsection{\texorpdfstring{Course()}{Course()}}
+{\footnotesize\ttfamily Course\+::\+Course (\begin{DoxyParamCaption}\item[{int}]{ID,  }\item[{std\+::string}]{name,  }\item[{std\+::string}]{department,  }\item[{std\+::string}]{type,  }\item[{std\+::string}]{hall,  }\item[{std\+::string}]{day,  }\item[{QTime}]{start\+\_\+time,  }\item[{QTime}]{end\+\_\+time,  }\item[{int}]{academic\+\_\+year,  }\item[{int}]{count\+\_\+student }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_course}{Course}} Class Features. 
+
+This class is used to link the data of Courses to either students or professors. \begin{DoxyAuthor}{Author}
+Muhanned Abdallah \& Omar Mahmoud 
+\end{DoxyAuthor}
+\begin{DoxyCopyright}{Copyright}
+Brogrammers. 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_course_a7dce85c53692b5f03e43449649494364}\label{class_course_a7dce85c53692b5f03e43449649494364}} 
+\index{Course@{Course}!add\_professor@{add\_professor}}
+\index{add\_professor@{add\_professor}!Course@{Course}}
+\doxysubsubsection{\texorpdfstring{add\_professor()}{add\_professor()}}
+{\footnotesize\ttfamily void Course\+::add\+\_\+professor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_professor}{Professor}} $\ast$}]{professor }\end{DoxyParamCaption})}
+
+
+
+Adding New Professors in the \mbox{\hyperlink{class_professor}{Professor}}\textquotesingle{}s Vector. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em New\+\_\+\+Professor} & That entered the \mbox{\hyperlink{class_course}{Course}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing to be returend 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_course_a90f4a66f9a4721c6ce74aec80584584c}\label{class_course_a90f4a66f9a4721c6ce74aec80584584c}} 
+\index{Course@{Course}!add\_student@{add\_student}}
+\index{add\_student@{add\_student}!Course@{Course}}
+\doxysubsubsection{\texorpdfstring{add\_student()}{add\_student()}}
+{\footnotesize\ttfamily void Course\+::add\+\_\+student (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_student}{Student}} $\ast$}]{student }\end{DoxyParamCaption})}
+
+
+
+add\+\_\+student Add a given student into the students vector in the course 
+
+
+\begin{DoxyParams}{Parameters}
+{\em student} & -\/ The student to be added\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing to be returend 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_course_af8d6736d7d9390807773cfd001cb2c65}\label{class_course_af8d6736d7d9390807773cfd001cb2c65}} 
+\index{Course@{Course}!delete\_professor@{delete\_professor}}
+\index{delete\_professor@{delete\_professor}!Course@{Course}}
+\doxysubsubsection{\texorpdfstring{delete\_professor()}{delete\_professor()}}
+{\footnotesize\ttfamily void Course\+::delete\+\_\+professor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_professor}{Professor}} $\ast$}]{professor }\end{DoxyParamCaption})}
+
+
+
+Deleting a Professsor From the Prfessor\textquotesingle{}s Vector. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Deleted\+\_\+\+Professor} & That will be removed from the \mbox{\hyperlink{class_course}{Course}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing to be returend 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_course_a2e5cb8ed4aba59634e01471f05ffb8f0}\label{class_course_a2e5cb8ed4aba59634e01471f05ffb8f0}} 
+\index{Course@{Course}!delete\_student@{delete\_student}}
+\index{delete\_student@{delete\_student}!Course@{Course}}
+\doxysubsubsection{\texorpdfstring{delete\_student()}{delete\_student()}}
+{\footnotesize\ttfamily void Course\+::delete\+\_\+student (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_student}{Student}} $\ast$}]{student }\end{DoxyParamCaption})}
+
+
+
+delete\+\_\+student Remove a given student from the students vector in the course 
+
+
+\begin{DoxyParams}{Parameters}
+{\em student} & -\/ The student to be removed\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing to be returend 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_course_ab86562a6bff7f93902c35654b5c20806}\label{class_course_ab86562a6bff7f93902c35654b5c20806}} 
+\index{Course@{Course}!dismiss\_course@{dismiss\_course}}
+\index{dismiss\_course@{dismiss\_course}!Course@{Course}}
+\doxysubsubsection{\texorpdfstring{dismiss\_course()}{dismiss\_course()}}
+{\footnotesize\ttfamily void Course\+::dismiss\+\_\+course (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Unenroll the \mbox{\hyperlink{class_student}{Student}} from a certain course. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em NULL} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothiing to be returned 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_course_a9f927402c7df3a2606160f2f233ff6ff}\label{class_course_a9f927402c7df3a2606160f2f233ff6ff}} 
+\index{Course@{Course}!edit\_student\_grade@{edit\_student\_grade}}
+\index{edit\_student\_grade@{edit\_student\_grade}!Course@{Course}}
+\doxysubsubsection{\texorpdfstring{edit\_student\_grade()}{edit\_student\_grade()}}
+{\footnotesize\ttfamily void Course\+::edit\+\_\+student\+\_\+grade (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_student}{Student}} $\ast$}]{student,  }\item[{float}]{grade }\end{DoxyParamCaption})}
+
+
+
+Edit the Grade of a student. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em student} & We want to edit his/her grade \\
+\hline
+{\em grade} & That will be edited \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing to be returned 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_course_a0b4cc0e46f46dde155fe5f120036e7ab}\label{class_course_a0b4cc0e46f46dde155fe5f120036e7ab}} 
+\index{Course@{Course}!find\_professor\_by\_name@{find\_professor\_by\_name}}
+\index{find\_professor\_by\_name@{find\_professor\_by\_name}!Course@{Course}}
+\doxysubsubsection{\texorpdfstring{find\_professor\_by\_name()}{find\_professor\_by\_name()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_professor}{Professor}} $\ast$ Course\+::find\+\_\+professor\+\_\+by\+\_\+name (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption})}
+
+
+
+Search for the \mbox{\hyperlink{class_professor}{Professor}} by his/her name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Professor\+\_\+\+Name} & as a search parameter \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing to be returend 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_course_a4cc8b59fe4784a36b307dfd5bce15fa9}\label{class_course_a4cc8b59fe4784a36b307dfd5bce15fa9}} 
+\index{Course@{Course}!find\_student\_by\_name@{find\_student\_by\_name}}
+\index{find\_student\_by\_name@{find\_student\_by\_name}!Course@{Course}}
+\doxysubsubsection{\texorpdfstring{find\_student\_by\_name()}{find\_student\_by\_name()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_student}{Student}} $\ast$ Course\+::find\+\_\+student\+\_\+by\+\_\+name (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption})}
+
+
+
+find\+\_\+student\+\_\+by\+\_\+name Search for a student with a given name in the students vector in the course 
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & -\/ The student name to be found \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+student -\/
+\end{DoxyReturn}
+The \mbox{\hyperlink{class_student}{Student}} Name if found, else Nothing to be returend \mbox{\Hypertarget{class_course_a8cbd97adb7c984aff426a6a938c26f7b}\label{class_course_a8cbd97adb7c984aff426a6a938c26f7b}} 
+\index{Course@{Course}!get\_academic\_year@{get\_academic\_year}}
+\index{get\_academic\_year@{get\_academic\_year}!Course@{Course}}
+\doxysubsubsection{\texorpdfstring{get\_academic\_year()}{get\_academic\_year()}}
+{\footnotesize\ttfamily int Course\+::get\+\_\+academic\+\_\+year (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the course\textquotesingle{}s Academic Year. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em NULL} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+course\textquotesingle{}s Academic Year 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_course_a8c5dd2993dca5838064abf68de9577e8}\label{class_course_a8c5dd2993dca5838064abf68de9577e8}} 
+\index{Course@{Course}!get\_code@{get\_code}}
+\index{get\_code@{get\_code}!Course@{Course}}
+\doxysubsubsection{\texorpdfstring{get\_code()}{get\_code()}}
+{\footnotesize\ttfamily std\+::string Course\+::get\+\_\+code (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the course\textquotesingle{}s Code. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em NULL} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+course\textquotesingle{}s Code 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_course_ae2053665f4fbb4202ce5a90466d9da48}\label{class_course_ae2053665f4fbb4202ce5a90466d9da48}} 
+\index{Course@{Course}!get\_day@{get\_day}}
+\index{get\_day@{get\_day}!Course@{Course}}
+\doxysubsubsection{\texorpdfstring{get\_day()}{get\_day()}}
+{\footnotesize\ttfamily std\+::string Course\+::get\+\_\+day (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the \mbox{\hyperlink{class_course}{Course}}\textquotesingle{}s Day. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em NULL} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+course\textquotesingle{}s Day 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_course_ab4d233f6046dc32ad7bf8d8d397c3c0f}\label{class_course_ab4d233f6046dc32ad7bf8d8d397c3c0f}} 
+\index{Course@{Course}!get\_department@{get\_department}}
+\index{get\_department@{get\_department}!Course@{Course}}
+\doxysubsubsection{\texorpdfstring{get\_department()}{get\_department()}}
+{\footnotesize\ttfamily std\+::string Course\+::get\+\_\+department (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the course\textquotesingle{}s Department. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em NULL} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+course\textquotesingle{}s Department 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_course_a9142cfe2e4f5ac4f5f68781e47e3ae2b}\label{class_course_a9142cfe2e4f5ac4f5f68781e47e3ae2b}} 
+\index{Course@{Course}!get\_hall@{get\_hall}}
+\index{get\_hall@{get\_hall}!Course@{Course}}
+\doxysubsubsection{\texorpdfstring{get\_hall()}{get\_hall()}}
+{\footnotesize\ttfamily std\+::string Course\+::get\+\_\+hall (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the course\textquotesingle{}s Hall (Lecture Place) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em NULL} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+course\textquotesingle{}s Hall 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_course_aacd3fb47f191a8e3ff7e46b62156b744}\label{class_course_aacd3fb47f191a8e3ff7e46b62156b744}} 
+\index{Course@{Course}!get\_ID@{get\_ID}}
+\index{get\_ID@{get\_ID}!Course@{Course}}
+\doxysubsubsection{\texorpdfstring{get\_ID()}{get\_ID()}}
+{\footnotesize\ttfamily int Course\+::get\+\_\+\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the course\textquotesingle{}s ID. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em NULL} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+course\textquotesingle{}s ID 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_course_a6c414036099f135f59025d4c7d5d7de5}\label{class_course_a6c414036099f135f59025d4c7d5d7de5}} 
+\index{Course@{Course}!get\_name@{get\_name}}
+\index{get\_name@{get\_name}!Course@{Course}}
+\doxysubsubsection{\texorpdfstring{get\_name()}{get\_name()}}
+{\footnotesize\ttfamily std\+::string Course\+::get\+\_\+name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the \mbox{\hyperlink{class_course}{Course}}\textquotesingle{}s Name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em NULL} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+course\textquotesingle{}s Name 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_course_ab7e460f83d98d4a4fa76d66c5f77094f}\label{class_course_ab7e460f83d98d4a4fa76d66c5f77094f}} 
+\index{Course@{Course}!get\_num\_std@{get\_num\_std}}
+\index{get\_num\_std@{get\_num\_std}!Course@{Course}}
+\doxysubsubsection{\texorpdfstring{get\_num\_std()}{get\_num\_std()}}
+{\footnotesize\ttfamily int Course\+::get\+\_\+num\+\_\+std (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Counting the student numbers in the course. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em NULL} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Number of students 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_course_ae073670680fdb495f440863b34b8830c}\label{class_course_ae073670680fdb495f440863b34b8830c}} 
+\index{Course@{Course}!get\_start\_time@{get\_start\_time}}
+\index{get\_start\_time@{get\_start\_time}!Course@{Course}}
+\doxysubsubsection{\texorpdfstring{get\_start\_time()}{get\_start\_time()}}
+{\footnotesize\ttfamily QTime Course\+::get\+\_\+start\+\_\+time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the course\textquotesingle{}s Start Time in the Semester. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em NULL} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+course\textquotesingle{}s Speciality 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_course_a71221757e53e88167a77969852cee804}\label{class_course_a71221757e53e88167a77969852cee804}} 
+\index{Course@{Course}!get\_type@{get\_type}}
+\index{get\_type@{get\_type}!Course@{Course}}
+\doxysubsubsection{\texorpdfstring{get\_type()}{get\_type()}}
+{\footnotesize\ttfamily std\+::string Course\+::get\+\_\+type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the course\textquotesingle{}s Type. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em NULL} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+course\textquotesingle{}s Type 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+F\+:/\+CUFE/\+SBME 2022/\+First Term/\+Data Structure/\+Final Project/\+Mo3id REPO/final-\/project-\/brogrammers/models/course.\+h\item 
+F\+:/\+CUFE/\+SBME 2022/\+First Term/\+Data Structure/\+Final Project/\+Mo3id REPO/final-\/project-\/brogrammers/models/course.\+cpp\end{DoxyCompactItemize}

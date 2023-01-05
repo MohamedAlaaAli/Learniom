@@ -1,0 +1,765 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_course" xml:lang="en-US">
+<title>Course Class Reference</title>
+<indexterm><primary>Course</primary></indexterm>
+<para>
+
+<para>In this class, there are all features and relations between Courses and All members in the learning Process. </para>
+ 
+</para>
+<para>
+<computeroutput>#include &lt;course.h&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_course_1a9f5f4948c145f91db6a099c74b5fe98a">Course</link> (int ID, std::string name, std::string department, std::string type, std::string hall, std::string day, QTime start_time, QTime end_time, int academic_year, int count_student)</para>
+
+<para><link linkend="_class_course">Course</link> Class Features. </para>
+</listitem>
+            <listitem><para>std::string <link linkend="_class_course_1a6c414036099f135f59025d4c7d5d7de5">get_name</link> () const</para>
+
+<para>Get the <link linkend="_class_course">Course</link>&apos;s Name. </para>
+</listitem>
+            <listitem><para>std::string <link linkend="_class_course_1a8c5dd2993dca5838064abf68de9577e8">get_code</link> () const</para>
+
+<para>Get the course&apos;s Code. </para>
+</listitem>
+            <listitem><para>std::string <link linkend="_class_course_1ab4d233f6046dc32ad7bf8d8d397c3c0f">get_department</link> () const</para>
+
+<para>Get the course&apos;s Department. </para>
+</listitem>
+            <listitem><para>std::string <link linkend="_class_course_1a71221757e53e88167a77969852cee804">get_type</link> () const</para>
+
+<para>Get the course&apos;s Type. </para>
+</listitem>
+            <listitem><para>std::string <link linkend="_class_course_1a9142cfe2e4f5ac4f5f68781e47e3ae2b">get_hall</link> () const</para>
+
+<para>Get the course&apos;s Hall (Lecture Place) </para>
+</listitem>
+            <listitem><para>std::string <link linkend="_class_course_1ae2053665f4fbb4202ce5a90466d9da48">get_day</link> () const</para>
+
+<para>Get the <link linkend="_class_course">Course</link>&apos;s Day. </para>
+</listitem>
+            <listitem><para>QTime <link linkend="_class_course_1ae073670680fdb495f440863b34b8830c">get_start_time</link> () const</para>
+
+<para>Get the course&apos;s Start Time in the Semester. </para>
+</listitem>
+            <listitem><para>int <link linkend="_class_course_1a8cbd97adb7c984aff426a6a938c26f7b">get_academic_year</link> () const</para>
+
+<para>Get the course&apos;s Academic Year. </para>
+</listitem>
+            <listitem><para>int <link linkend="_class_course_1aacd3fb47f191a8e3ff7e46b62156b744">get_ID</link> () const</para>
+
+<para>Get the course&apos;s ID. </para>
+</listitem>
+            <listitem><para>int <link linkend="_class_course_1ab7e460f83d98d4a4fa76d66c5f77094f">get_num_std</link> () const</para>
+
+<para>Counting the student numbers in the course. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_course_1ab86562a6bff7f93902c35654b5c20806">dismiss_course</link> ()</para>
+
+<para>Unenroll the <link linkend="_class_student">Student</link> from a certain course. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_course_1a90f4a66f9a4721c6ce74aec80584584c">add_student</link> (<link linkend="_class_student">Student</link> *)</para>
+
+<para>add_student Add a given student into the students vector in the course </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_course_1a2e5cb8ed4aba59634e01471f05ffb8f0">delete_student</link> (<link linkend="_class_student">Student</link> *)</para>
+
+<para>delete_student Remove a given student from the students vector in the course </para>
+</listitem>
+            <listitem><para><link linkend="_class_student">Student</link> * <link linkend="_class_course_1a4cc8b59fe4784a36b307dfd5bce15fa9">find_student_by_name</link> (std::string)</para>
+
+<para>find_student_by_name Search for a student with a given name in the students vector in the course </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_course_1a9f927402c7df3a2606160f2f233ff6ff">edit_student_grade</link> (<link linkend="_class_student">Student</link> *, float)</para>
+
+<para>Edit the Grade of a student. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_course_1a7dce85c53692b5f03e43449649494364">add_professor</link> (<link linkend="_class_professor">Professor</link> *)</para>
+
+<para>Adding New Professors in the <link linkend="_class_professor">Professor</link>&apos;s Vector. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_course_1af8d6736d7d9390807773cfd001cb2c65">delete_professor</link> (<link linkend="_class_professor">Professor</link> *)</para>
+
+<para>Deleting a Professsor From the Prfessor&apos;s Vector. </para>
+</listitem>
+            <listitem><para><link linkend="_class_professor">Professor</link> * <link linkend="_class_course_1a0b4cc0e46f46dde155fe5f120036e7ab">find_professor_by_name</link> (std::string)</para>
+
+<para>Search for the <link linkend="_class_professor">Professor</link> by his/her name. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_course_1a8a300fc8a42cf55a12e709f646360f2c"/>void <emphasis role="strong">set_students</emphasis> (<link linkend="_class_student">Student</link> *student)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_course_1aed5e1305788c1aa27fcb750537bc94a6"/>void <emphasis role="strong">set_students_to_grades</emphasis> (<link linkend="_class_student">Student</link> *student, float grade)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>In this class, there are all features and relations between Courses and All members in the learning Process. </para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_course_1a9f5f4948c145f91db6a099c74b5fe98a"/><section>
+    <title>Course()</title>
+<indexterm><primary>Course</primary><secondary>Course</secondary></indexterm>
+<indexterm><primary>Course</primary><secondary>Course</secondary></indexterm>
+<para><computeroutput>Course::Course (int ID, std::string name, std::string department, std::string type, std::string hall, std::string day, QTime start_time, QTime end_time, int academic_year, int count_student)</computeroutput></para><para>
+
+<para><link linkend="_class_course">Course</link> Class Features. </para>
+</para>
+
+<para>This class is used to link the data of Courses to either students or professors. <formalpara><title>Author</title>
+
+<para>Muhanned Abdallah &amp; Omar Mahmoud </para>
+</formalpara>
+<formalpara><title>Copyright</title>
+
+<para>Brogrammers. </para>
+</formalpara>
+</para>
+</section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_course_1a7dce85c53692b5f03e43449649494364"/><section>
+    <title>add_professor()</title>
+<indexterm><primary>add_professor</primary><secondary>Course</secondary></indexterm>
+<indexterm><primary>Course</primary><secondary>add_professor</secondary></indexterm>
+<para><computeroutput>void Course::add_professor (<link linkend="_class_professor">Professor</link> * professor)</computeroutput></para><para>
+
+<para>Adding New Professors in the <link linkend="_class_professor">Professor</link>&apos;s Vector. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>New_Professor</entry><entry>
+<para>That entered the <link linkend="_class_course">Course</link> </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>Nothing to be returend </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_class_course_1a90f4a66f9a4721c6ce74aec80584584c"/><section>
+    <title>add_student()</title>
+<indexterm><primary>add_student</primary><secondary>Course</secondary></indexterm>
+<indexterm><primary>Course</primary><secondary>add_student</secondary></indexterm>
+<para><computeroutput>void Course::add_student (<link linkend="_class_student">Student</link> * student)</computeroutput></para><para>
+
+<para>add_student Add a given student into the students vector in the course </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>student</entry><entry>
+<para>- The student to be added</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>Nothing to be returend </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_class_course_1af8d6736d7d9390807773cfd001cb2c65"/><section>
+    <title>delete_professor()</title>
+<indexterm><primary>delete_professor</primary><secondary>Course</secondary></indexterm>
+<indexterm><primary>Course</primary><secondary>delete_professor</secondary></indexterm>
+<para><computeroutput>void Course::delete_professor (<link linkend="_class_professor">Professor</link> * professor)</computeroutput></para><para>
+
+<para>Deleting a Professsor From the Prfessor&apos;s Vector. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>Deleted_Professor</entry><entry>
+<para>That will be removed from the <link linkend="_class_course">Course</link> </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>Nothing to be returend </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_class_course_1a2e5cb8ed4aba59634e01471f05ffb8f0"/><section>
+    <title>delete_student()</title>
+<indexterm><primary>delete_student</primary><secondary>Course</secondary></indexterm>
+<indexterm><primary>Course</primary><secondary>delete_student</secondary></indexterm>
+<para><computeroutput>void Course::delete_student (<link linkend="_class_student">Student</link> * student)</computeroutput></para><para>
+
+<para>delete_student Remove a given student from the students vector in the course </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>student</entry><entry>
+<para>- The student to be removed</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>Nothing to be returend </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_class_course_1ab86562a6bff7f93902c35654b5c20806"/><section>
+    <title>dismiss_course()</title>
+<indexterm><primary>dismiss_course</primary><secondary>Course</secondary></indexterm>
+<indexterm><primary>Course</primary><secondary>dismiss_course</secondary></indexterm>
+<para><computeroutput>void Course::dismiss_course ( )</computeroutput></para><para>
+
+<para>Unenroll the <link linkend="_class_student">Student</link> from a certain course. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>NULL</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>Nothiing to be returned </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_class_course_1a9f927402c7df3a2606160f2f233ff6ff"/><section>
+    <title>edit_student_grade()</title>
+<indexterm><primary>edit_student_grade</primary><secondary>Course</secondary></indexterm>
+<indexterm><primary>Course</primary><secondary>edit_student_grade</secondary></indexterm>
+<para><computeroutput>void Course::edit_student_grade (<link linkend="_class_student">Student</link> * student, float grade)</computeroutput></para><para>
+
+<para>Edit the Grade of a student. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>student</entry><entry>
+<para>We want to edit his/her grade </para>
+</entry>
+                            </row>
+                            <row>
+<entry>grade</entry><entry>
+<para>That will be edited </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>Nothing to be returned </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_class_course_1a0b4cc0e46f46dde155fe5f120036e7ab"/><section>
+    <title>find_professor_by_name()</title>
+<indexterm><primary>find_professor_by_name</primary><secondary>Course</secondary></indexterm>
+<indexterm><primary>Course</primary><secondary>find_professor_by_name</secondary></indexterm>
+<para><computeroutput><link linkend="_class_professor">Professor</link> * Course::find_professor_by_name (std::string name)</computeroutput></para><para>
+
+<para>Search for the <link linkend="_class_professor">Professor</link> by his/her name. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>Professor_Name</entry><entry>
+<para>as a search parameter </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>Nothing to be returend </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_class_course_1a4cc8b59fe4784a36b307dfd5bce15fa9"/><section>
+    <title>find_student_by_name()</title>
+<indexterm><primary>find_student_by_name</primary><secondary>Course</secondary></indexterm>
+<indexterm><primary>Course</primary><secondary>find_student_by_name</secondary></indexterm>
+<para><computeroutput><link linkend="_class_student">Student</link> * Course::find_student_by_name (std::string name)</computeroutput></para><para>
+
+<para>find_student_by_name Search for a student with a given name in the students vector in the course </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>string</entry><entry>
+<para>- The student name to be found </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>student -</para>
+</formalpara>
+The <link linkend="_class_student">Student</link> Name if found, else Nothing to be returend </para>
+</section>
+<anchor xml:id="_class_course_1a8cbd97adb7c984aff426a6a938c26f7b"/><section>
+    <title>get_academic_year()</title>
+<indexterm><primary>get_academic_year</primary><secondary>Course</secondary></indexterm>
+<indexterm><primary>Course</primary><secondary>get_academic_year</secondary></indexterm>
+<para><computeroutput>int Course::get_academic_year ( ) const</computeroutput></para><para>
+
+<para>Get the course&apos;s Academic Year. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>NULL</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>course&apos;s Academic Year </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_class_course_1a8c5dd2993dca5838064abf68de9577e8"/><section>
+    <title>get_code()</title>
+<indexterm><primary>get_code</primary><secondary>Course</secondary></indexterm>
+<indexterm><primary>Course</primary><secondary>get_code</secondary></indexterm>
+<para><computeroutput>std::string Course::get_code ( ) const</computeroutput></para><para>
+
+<para>Get the course&apos;s Code. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>NULL</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>course&apos;s Code </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_class_course_1ae2053665f4fbb4202ce5a90466d9da48"/><section>
+    <title>get_day()</title>
+<indexterm><primary>get_day</primary><secondary>Course</secondary></indexterm>
+<indexterm><primary>Course</primary><secondary>get_day</secondary></indexterm>
+<para><computeroutput>std::string Course::get_day ( ) const</computeroutput></para><para>
+
+<para>Get the <link linkend="_class_course">Course</link>&apos;s Day. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>NULL</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>course&apos;s Day </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_class_course_1ab4d233f6046dc32ad7bf8d8d397c3c0f"/><section>
+    <title>get_department()</title>
+<indexterm><primary>get_department</primary><secondary>Course</secondary></indexterm>
+<indexterm><primary>Course</primary><secondary>get_department</secondary></indexterm>
+<para><computeroutput>std::string Course::get_department ( ) const</computeroutput></para><para>
+
+<para>Get the course&apos;s Department. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>NULL</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>course&apos;s Department </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_class_course_1a9142cfe2e4f5ac4f5f68781e47e3ae2b"/><section>
+    <title>get_hall()</title>
+<indexterm><primary>get_hall</primary><secondary>Course</secondary></indexterm>
+<indexterm><primary>Course</primary><secondary>get_hall</secondary></indexterm>
+<para><computeroutput>std::string Course::get_hall ( ) const</computeroutput></para><para>
+
+<para>Get the course&apos;s Hall (Lecture Place) </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>NULL</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>course&apos;s Hall </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_class_course_1aacd3fb47f191a8e3ff7e46b62156b744"/><section>
+    <title>get_ID()</title>
+<indexterm><primary>get_ID</primary><secondary>Course</secondary></indexterm>
+<indexterm><primary>Course</primary><secondary>get_ID</secondary></indexterm>
+<para><computeroutput>int Course::get_ID ( ) const</computeroutput></para><para>
+
+<para>Get the course&apos;s ID. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>NULL</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>course&apos;s ID </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_class_course_1a6c414036099f135f59025d4c7d5d7de5"/><section>
+    <title>get_name()</title>
+<indexterm><primary>get_name</primary><secondary>Course</secondary></indexterm>
+<indexterm><primary>Course</primary><secondary>get_name</secondary></indexterm>
+<para><computeroutput>std::string Course::get_name ( ) const</computeroutput></para><para>
+
+<para>Get the <link linkend="_class_course">Course</link>&apos;s Name. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>NULL</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>course&apos;s Name </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_class_course_1ab7e460f83d98d4a4fa76d66c5f77094f"/><section>
+    <title>get_num_std()</title>
+<indexterm><primary>get_num_std</primary><secondary>Course</secondary></indexterm>
+<indexterm><primary>Course</primary><secondary>get_num_std</secondary></indexterm>
+<para><computeroutput>int Course::get_num_std ( ) const</computeroutput></para><para>
+
+<para>Counting the student numbers in the course. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>NULL</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>Number of students </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_class_course_1ae073670680fdb495f440863b34b8830c"/><section>
+    <title>get_start_time()</title>
+<indexterm><primary>get_start_time</primary><secondary>Course</secondary></indexterm>
+<indexterm><primary>Course</primary><secondary>get_start_time</secondary></indexterm>
+<para><computeroutput>QTime Course::get_start_time ( ) const</computeroutput></para><para>
+
+<para>Get the course&apos;s Start Time in the Semester. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>NULL</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>course&apos;s Speciality </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_class_course_1a71221757e53e88167a77969852cee804"/><section>
+    <title>get_type()</title>
+<indexterm><primary>get_type</primary><secondary>Course</secondary></indexterm>
+<indexterm><primary>Course</primary><secondary>get_type</secondary></indexterm>
+<para><computeroutput>std::string Course::get_type ( ) const</computeroutput></para><para>
+
+<para>Get the course&apos;s Type. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>NULL</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>course&apos;s Type </para>
+</formalpara>
+</para>
+</section>
+<para>
+The documentation for this class was generated from the following files:</para>
+F:/CUFE/SBME 2022/First Term/Data Structure/Final Project/Mo3id REPO/final-project-brogrammers/models/course.hF:/CUFE/SBME 2022/First Term/Data Structure/Final Project/Mo3id REPO/final-project-brogrammers/models/course.cpp</section>
+</section>
